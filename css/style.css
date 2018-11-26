@@ -335,4 +335,7 @@ body {
     margin-bottom: 5px;
     font-size: 11px;
   }
+  .titi{
+    align-self: auto;
+  }
 }
