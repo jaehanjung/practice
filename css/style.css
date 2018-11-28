@@ -171,12 +171,12 @@ body {
     width: 100%;
   }
   .menu_more {
+    text-align: center;
     height: 20px;
     border-bottom: 2px solid #ededed;
   }
   .menu_list {
-    margin-left: 40px;
-    opacity: 30%;
+    width: 25%;
     font-size: 15px;
     color: #111111;
     float: left;
@@ -192,12 +192,20 @@ body {
   .sub_menu li a {
     color: #181818;
   }
+  .sub_menu_home {
+    width: 100%;
+    text-align: center;
+  }
+  .sub_menu_phone {
+    text-align: center;
+    width: 19.8%;
+  }
+  .sub_menu_shop {
+    width: 33.1%;
+  }
   .sub_menu li {
-    padding: 2px 10px;
     background-color: #fff;
-    margin-top: 1px;
     float: left;
-    margin-left: 15px;
   }
 
   .sub_menu li:hover {
@@ -207,7 +215,14 @@ body {
   .sub_menu li a:hover {
     color: #fff;
   }
-  .sub_menu li.calender {
+  .sub_menu li a:hover:last-child{
+    color: #181818;
+  }
+  .sub_menu_calender {
+    width: 33.1%;
+  }
+  
+  .sub_menu li.sub_menu_calender {
     background-color: #fff;
     border: 0;
   }
@@ -216,6 +231,7 @@ body {
     color: white;
   }
   .active.sub_menu {
+    width: 100%;
     font-size: 12px;
     position: absolute;
     left: 0;
@@ -336,5 +352,4 @@ body {
     margin-bottom: 5px;
     font-size: 11px;
   }
-
 }
