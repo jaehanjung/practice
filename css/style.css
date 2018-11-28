@@ -307,13 +307,14 @@ body {
   }
   /* 추천상품영역 */
   .recommendation_card_more {
-    padding: 10px 15px;
+    padding: 10px 10px;
+    width: 100%;
     float: left;
   }
   .recommendation_card {
     border: 1px solid #ededed;
     float: left;
-    width: 150px;
+    width: 42%;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
@@ -335,7 +336,5 @@ body {
     margin-bottom: 5px;
     font-size: 11px;
   }
-  .titi{
-    align-self: auto;
-  }
+
 }

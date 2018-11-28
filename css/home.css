@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+  text-decoration: none;
+}
+span,
+p,
+li,
+a {
+  color: #181818;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.plan {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: #ededed;
+}
+.plan_title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.plan_menu {
+  font-size: 12px;
+  top: 30%;
+  position: absolute;
+  right: 5px;
+  color: #888888;
+}
+
+/* 숨김 콘텐츠 */
+
+.readable-hidden,
+.a11y,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* 본문 스타일 */
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 480px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+  }
+  /* 헤더 메뉴영역 */
+  .header_menu {
+    height: 60px;
+  }
+  .icon-menu {
+    margin-top: 8px;
+    font-size: 30px;
+    width: 50px;
+    float: left;
+    color: #ededed;
+    text-align: center;
+  }
+  .logo {
+    float: left;
+  }
+  .logo a {
+    font-size: 20px;
+    color: #4444e2;
+  }
+  .icon_more {
+    margin-top: 13px;
+    margin-left: 20px;
+    float: right;
+  }
+  .icon_btn {
+    font-size: 20px;
+    width: 35px;
+    float: left;
+  }
+  /* 네비영역 */
+  .navigation {
+    height: 50px;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+  }
+  .menu_more {
+    height: 20px;
+    border-bottom: 2px solid #ededed;
+  }
+  .menu_list {
+    margin-left: 40px;
+    opacity: 30%;
+    font-size: 15px;
+    color: #111111;
+    float: left;
+  }
+  .menu_item:hover {
+    border-bottom: 2px solid #4444e2;
+    color: #4444e2;
+  }
+  .sub_menu {
+    display: none;
+    list-style-type: disc;
+  }
+  .sub_menu li a {
+    color: #181818;
+  }
+  .sub_menu li {
+    padding: 2px 10px;
+    background-color: #fff;
+    margin-top: 1px;
+    float: left;
+    margin-left: 15px;
+  }
+
+  .sub_menu li:hover {
+    border: 1px solid #4444e2;
+    background-color: #4444e2;
+  }
+  .sub_menu li a:hover {
+    color: #fff;
+  }
+  .sub_menu li.calender {
+    background-color: #fff;
+    border: 0;
+  }
+  .sub_menu a {
+    text-align: center;
+    color: white;
+  }
+  .active.sub_menu {
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    display: block;
+    margin-top: 10px;
+  }
+  /* 메인 영역 */
+  .main {
+    background-color: #ededed;
+    margin-top: 12px;
+  }
+
+  /*메인 캐러셀 영역 */
+  .carusel {
+    position: relative;
+    height: 194px;
+  }
+  .carusel_btn {
+    /* background-color: #181818; */
+    opacity: 0.5;
+    position: absolute;
+    display: inline-block;
+    top: 167px;
+    right: 0;
+  }
+  .left-button {
+    border: 0;
+    opacity: 0.5;
+  }
+  .right-button {
+    border: 0;
+    opacity: 0.5;
+  }
+  .carusel_box {
+    display: none;
+  }
+  .carusel_box img {
+    width: 100%;
+    height: 194px;
+  }
+  .active.carusel_box {
+    display: block;
+  }
+
+  /* 하단메뉴영역 */
+  .bottom_menu {
+    position: relative;
+    height: 126px;
+    background-color: #fff;
+    width: 100%;
+  }
+  .bt_menu_box {
+    float: left;
+    width: 19.1%;
+    text-align: center;
+    cursor: pointer;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px;
+  }
+
+  /* .bt_menu_box:nth-child(-n+8){
+      border-bottom: 0;
+      border-right: 0;
+  }
+  .bt_menu_box:nth-child(n+5){
+      border-bottom: 0.5px solid #8e8e8e;
+  }
+  .bt_menu_box:nth-child(4){
+      border-right: 1px solid #8e8e8e;
+  }
+  .bt_menu_box:nth-child(8){
+      border-right: 1px solid #8e8e8e;
+  } */
+  .bt_menu_box a {
+    margin-top: 5px;
+    display: block;
+    color: #111111;
+    font-size: 12px;
+  }
+  /* 서브베너 영역 */
+  .sub_banner img {
+    width: 100%;
+    height: 100px;
+  }
+  /* 홈 메인 상품영역 */
+  .home_product_card {
+    background-color: #fff;
+    position: relative;
+    margin-top: 10px;
+  }
+  .home_product_card:first-child {
+    margin-top: 0;
+  }
+  /*홈 메인 hit상품  */
+  .home_hit_product {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(to left, #1565ff, #ca6aff);
+    top: 8%;
+    left: 2%;
+  }
+  .home_hit_product span {
+    color: #fff;
+    display: block;
+    margin-top: 38%;
+    font-size: 15px;
+  }
+  /* 홈메인 하트 아이콘 */
+  .home_icon_heart {
+    position: absolute;
+    right: 15px;
+    top: 24px;
+  }
+  .icon-heart-empty {
+    color: #aeaeae;
+  }
+  /* 홈메인 카드 이미지 */
+  .home_product_card img {
+    width: 100%;
+    height: 177px;
+  }
+  /* 홈메인 상품 타이틀 및 가격 */
+  .home_product_menu {
+    float: left;
+    margin-top: -3px;
+
+    padding: 0px 0px 0px 20px;
+  }
+  .home_product_title {
+    color: #888888;
+    font-size: 14px;
+    line-height: 2;
+  }
+  .home_sale {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff2247;
+  }
+  .home_product_price {
+    font-weight: bold;
+  }
+  .home_original_price {
+    color: #aeaeae;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+  /* 홈메인 상품 통신사및 월가격 */
+  .home_news_agency_menu {
+    float: right;
+    padding-right: 20px;
+    line-height: 1.8;
+  }
+  .home_news_agency {
+    text-align: right;
+    color: #888888;
+    font-size: 12px;
+  }
+  .home_monthly {
+    font-size: 14px;
+  }
+  .home_monthly_price {
+    font-weight: bold;
+  }
+  .home_monthly_won {
+    font-size: 14px;
+  }
+
+  /* 영업상품영역 */
+  /* 영업상품 큰이미지 */
+  .sales_card_box {
+    padding: 0px 15px 10px 15px;
+    background-color: #fff;
+  }
+  .sales_card {
+    border: 1px solid #ededed;
+  }
+  .sales_card img {
+    width: 100%;
+    display: block;
+  }
+
+  /* 영업상품 서브카드 */
+  .sales_sub_card {
+    margin-top: 15px;
+    border: 1px solid #ededed;
+    width: 48%;
+    float: left;
+  }
+  .sales_sub_card:nth-of-type(odd) {
+    float: right;
+  }
+  .sales_sub_card img {
+    border-right: 1px solid #ededed;
+    width: 50%;
+    float: left;
+  }
+  .sales_menu {
+    line-height: 1.5;
+    width: 49%;
+    float: left;
+  }
+  .sales_news_agency {
+    font-size: 9px;
+  }
+  .sales_title {
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .sales_price {
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .sales_open {
+    font-size: 8px;
+  }
+  /* dream deal 영역 */
+  /* dream deal 카드영역 */
+
+  .dream_deal_card {
+    position: relative;
+    margin-top: 10px;
+  }
+  .dream_deal_icon_heart {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  .dream_deal_card:first-child {
+    margin-top: 0;
+  }
+  .dream_deal_card img {
+    width: 100%;
+    height: 177px;
+  }
+  .dream_deal_menu {
+    margin-top: -3px;
+    background-color: #fff;
+    padding: 0px 0px 0px 20px;
+  }
+  .dream_deal_title {
+    font-size: 13px;
+    color: #181818;
+  }
+  .dream_deal_contents {
+    font-size: 10px;
+    color: #888888;
+  }
+
+  .dream_deal_sale {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff2247;
+  }
+  .dream_deal_price {
+    font-weight: bold;
+  }
+  .dream_deal_original_price {
+    color: #aeaeae;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+}
