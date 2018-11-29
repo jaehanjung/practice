@@ -34,7 +34,9 @@ a {
   text-decoration: none;
 }
 span,
-p {
+p,
+li,
+a {
   color: #181818;
 }
 
