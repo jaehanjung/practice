@@ -94,17 +94,19 @@ body {
   }
   /* 헤더 메뉴영역 */
   .header_menu {
+    width: 100%;
     height: 60px;
   }
   .icon-menu {
     margin-top: 8px;
     font-size: 30px;
-    width: 50px;
+    width: 15%;
     float: left;
     color: #ededed;
     text-align: center;
   }
   .logo {
+    width: 40%;
     float: left;
   }
   .logo a {
@@ -112,6 +114,7 @@ body {
     color: #4444e2;
   }
   .icon_more {
+    width: 32%;
     margin-top: 13px;
     margin-left: 20px;
     float: right;
@@ -155,11 +158,11 @@ body {
     width: 100%;
     text-align: center;
   }
-   .sub_menu_phone {
+  .sub_menu_phone {
     text-align: center;
     width: 19.8%;
   }
-   .sub_menu_shop {
+  .sub_menu_shop {
     width: 33.1%;
   }
   .sub_menu li {
@@ -174,10 +177,7 @@ body {
   .sub_menu li a:hover {
     color: #fff;
   }
-   .sub_menu li a:hover:last-child{
-    color: #181818;
-  }
-   .sub_menu_calender {
+  .sub_menu_calender {
     width: 33.1%;
   }
   .sub_menu li.calender {
@@ -205,7 +205,7 @@ body {
   /*메인 캐러셀 영역 */
   .carusel {
     position: relative;
-    height: 194px;
+    /* height: 194px; */
   }
   .carusel_btn {
     /* background-color: #181818; */
@@ -226,28 +226,32 @@ body {
   .carusel_box {
     display: none;
   }
+
   .carusel_box img {
     width: 100%;
     height: 194px;
   }
   .active.carusel_box {
+    width: 100%;
     display: block;
   }
 
   /* 하단메뉴영역 */
   .bottom_menu {
     position: relative;
-    height: 126px;
-    background-color: #fff;
     width: 100%;
   }
+  .bt_menu {
+    height: 103px;
+  }
   .bt_menu_box {
+    line-height: 1.6;
+    background-color: #fff;
     float: left;
-    width: 19.1%;
+    width: 24.7%;
     text-align: center;
     cursor: pointer;
     border: 0.5px solid #8e8e8e;
-    padding: 10px;
   }
 
   /* .bt_menu_box:nth-child(-n+8){
@@ -413,7 +417,6 @@ body {
 
   .dream_deal_card {
     position: relative;
-    margin-top: 10px;
   }
   .dream_deal_icon_heart {
     position: absolute;
@@ -453,5 +456,54 @@ body {
     color: #aeaeae;
     text-decoration: line-through;
     font-size: 12px;
+  }
+  /* 복지상품영역 */
+  /* welfare카드영역 */
+
+  .welfare_card {
+    position: relative;
+  }
+  .welfare_icon_heart {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  .welfare_card:first-child {
+    margin-top: 0;
+  }
+  .welfare_card img {
+    width: 100%;
+    height: 177px;
+  }
+  .welfare_menu {
+    margin-top: -3px;
+    background-color: #fff;
+    padding: 0px 0px 0px 20px;
+  }
+  .welfare_title {
+    font-size: 13px;
+    color: #181818;
+  }
+
+  .welfare_sale {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff2247;
+  }
+  .welfare_price {
+    position: relative;
+    font-weight: bold;
+  }
+  .welfare_original_price {
+    color: #aeaeae;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+  .welfare_shipping {
+    position: absolute;
+    bottom: 3px;
+    right: 16px;
+    font-size: 11px;
+    color: #aeaeae;
   }
 }
