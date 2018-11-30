@@ -309,7 +309,7 @@ body {
     opacity: 0.5;
     position: absolute;
     display: inline-block;
-    top: 167px;
+    bottom: 13px;
     right: 0;
   }
   .phone_left-button {
@@ -324,18 +324,19 @@ body {
     display: none;
   }
   .active.phone_carusel_box {
-    border: 0.5px solid;
+    border-bottom: 0.5px solid #111111;
+    border-top: 0.5px solid #111111;
     height: 255px;
     display: block;
   }
   .phone_carusel_box1 {
-    border: 1px solid;
+    border: 1px solid #8e8e8e;
     margin: 10px 10px;
     float: left;
     width: 43.7%;
   }
   .phone_carusel_box2 {
-    border: 1px solid;
+    border: 1px solid #8e8e8e;
     margin: 10px 10px;
     float: left;
     width: 43.7%;
@@ -362,5 +363,168 @@ body {
     text-align: right;
     display: inherit;
     font-weight: bold;
+  }
+  /* 인기 저가폰 영역 */
+  /* low_cost_phone */
+  .low_cost_phone {
+    background-color: #fff;
+  }
+  .low_cost_phone_carusel {
+    position: relative;
+    width: 100%;
+    /* height: 194px; */
+  }
+  .low_cost_phone_carusel_btn {
+    /* background-color: #181818; */
+    opacity: 0.5;
+    position: absolute;
+    display: inline-block;
+    bottom: 13px;
+    right: 0;
+  }
+  .low_cost_phone_left-button {
+    border: 0;
+    opacity: 0.5;
+  }
+  .low_cost_phone_right-button {
+    border: 0;
+    opacity: 0.5;
+  }
+  .low_cost_phone_carusel_box {
+    padding-top: 15px;
+  }
+  .active.low_cost_phone_carusel_box {
+    border-bottom: 0.5px solid #111111;
+    border-top: 0.5px solid #111111;
+    height: 255px;
+    display: block;
+  }
+  .low_cost_phone_carusel_box1 {
+    border: 1px solid #8e8e8e;
+    margin: 10px 10px;
+    float: left;
+    width: 26%;
+  }
+  .low_cost_phone_carusel_box2 {
+    border: 1px solid #8e8e8e;
+    margin: 10px 10px;
+    float: left;
+    width: 26%;
+  }
+  .low_cost_phone_carusel_box3 {
+    border: 1px solid #8e8e8e;
+    margin: 10px 10px;
+    float: left;
+    width: 26%;
+  }
+  .low_cost_phone_carusel_box img {
+    width: 100%;
+    height: 115px;
+  }
+  .low_cost_phone_carusel_menu {
+    margin: 5px 15px;
+  }
+  .low_cost_phone_carusel_agency {
+    font-size: 14px;
+  }
+  .low_cost_phone_carusel_title {
+    font-weight: bold;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .low_cost_phone_carusel_price {
+    text-align: right;
+    display: inherit;
+    font-weight: bold;
+  }
+
+  /* 히트폰 영역 */
+  /* 히트폰 메인 상품영역 */
+
+  .hit_phone_card {
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+
+  /*히트폰 hit상품 아이콘  */
+  .hit_phone_hit_product {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(to left, #1565ff, #ca6aff);
+    top: 8%;
+    left: 2%;
+  }
+  .hit_phone_hit_product span {
+    color: #fff;
+    display: block;
+    margin-top: 38%;
+    font-size: 15px;
+  }
+  /* 히트폰 메인 하트 아이콘 */
+  .hit_phone_icon_heart {
+    position: absolute;
+    right: 15px;
+    top: 24px;
+  }
+  .icon-heart-empty {
+    color: #aeaeae;
+  }
+  /* 히트폰 메인 카드 이미지 */
+  .hit_phone_card img {
+    width: 100%;
+    height: 177px;
+  }
+  /* 히트폰메인 상품 타이틀 및 가격 */
+  .hit_phone_menu {
+    float: left;
+    margin-top: -3px;
+
+    padding: 0px 0px 0px 20px;
+  }
+  .hit_phone_title {
+    color: #888888;
+    font-size: 14px;
+    line-height: 2;
+  }
+  .hit_phone_sale {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff2247;
+  }
+  .hit_phone_price {
+    font-weight: bold;
+  }
+  .hit_phone_original_price {
+    color: #aeaeae;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+  /* 히트폰 메인 상품 통신사및 월가격 */
+  .hit_phone_news_agency_menu {
+    float: right;
+    padding-right: 20px;
+    line-height: 1.8;
+  }
+  .hit_phone_news_agency {
+    text-align: right;
+    color: #888888;
+    font-size: 12px;
+  }
+  .hit_phone_monthly {
+    font-size: 14px;
+  }
+  .hit_phone_monthly_price {
+    font-weight: bold;
+  }
+  .hit_phone_monthly_won {
+    font-size: 14px;
   }
 }

@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+  text-decoration: none;
+}
+span,
+p,
+li,
+a {
+  color: #181818;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.plan {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: #ededed;
+}
+.plan_title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.plan_menu {
+  font-size: 12px;
+  top: 30%;
+  position: absolute;
+  right: 5px;
+  color: #888888;
+}
+
+/* 숨김 콘텐츠 */
+
+.readable-hidden,
+.a11y,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* 본문 스타일 */
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 480px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+  }
+  /* 헤더 메뉴영역 */
+  .header_menu {
+    width: 100%;
+    height: 60px;
+  }
+  .icon-menu {
+    margin-top: 8px;
+    font-size: 30px;
+    width: 15%;
+    float: left;
+    color: #ededed;
+    text-align: center;
+  }
+  .logo {
+    width: 40%;
+    float: left;
+  }
+  .logo a {
+    font-size: 20px;
+    color: #4444e2;
+  }
+  .icon_more {
+    width: 32%;
+    margin-top: 13px;
+    margin-left: 20px;
+    float: right;
+  }
+  .icon_btn {
+    font-size: 20px;
+    width: 35px;
+    float: left;
+  }
+  /* 네비영역 */
+  .navigation {
+    height: 50px;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+  }
+  .menu_more {
+    text-align: center;
+    height: 20px;
+    border-bottom: 2px solid #ededed;
+  }
+  .menu_list {
+    width: 25%;
+    font-size: 15px;
+    color: #111111;
+    float: left;
+  }
+  .menu_item:hover {
+    border-bottom: 2px solid #4444e2;
+    color: #4444e2;
+  }
+  .sub_menu {
+    display: none;
+    list-style-type: disc;
+  }
+  .sub_menu li a {
+    color: #181818;
+  }
+  .sub_menu_home {
+    width: 100%;
+    text-align: center;
+  }
+  .sub_menu_phone {
+    text-align: center;
+    width: 19.8%;
+  }
+  .sub_menu_phone_agency {
+    position: absolute;
+    text-align: center;
+  }
+  .sub_menu_phone_agency li:hover {
+    color: #fff;
+  }
+  .sub_menu_shop {
+    width: 33.1%;
+  }
+  .sub_menu li {
+    position: relative;
+    background-color: #fff;
+    float: left;
+  }
+
+  .sub_menu li:hover {
+    border: 1px solid #4444e2;
+    background-color: #4444e2;
+  }
+  .sub_menu li a:hover {
+    color: #fff;
+  }
+
+  .sub_menu_calender {
+    width: 33.1%;
+  }
+  .sub_menu li.calender {
+    background-color: #fff;
+    border: 0;
+  }
+  .sub_menu a {
+    text-align: center;
+    color: white;
+  }
+  .active.sub_menu {
+    width: 100%;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    display: block;
+    margin-top: 10px;
+  }
+}

@@ -416,6 +416,7 @@ body {
   /* dream deal 카드영역 */
 
   .dream_deal_card {
+    margin-bottom: 10px;
     position: relative;
   }
   .dream_deal_icon_heart {
@@ -459,8 +460,11 @@ body {
   }
   /* 복지상품영역 */
   /* welfare카드영역 */
-
+  .welfare {
+    margin-top: -10px;
+  }
   .welfare_card {
+    margin-bottom: 10px;
     position: relative;
   }
   .welfare_icon_heart {
