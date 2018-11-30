@@ -388,9 +388,12 @@ body {
   .sales_sub_card:nth-of-type(odd) {
     float: right;
   }
+  .sales_sub_img{
+    width: 50%;
+  }
   .sales_sub_card img {
     border-right: 1px solid #ededed;
-    width: 50%;
+    width: 100%;
     float: left;
   }
   .sales_menu {

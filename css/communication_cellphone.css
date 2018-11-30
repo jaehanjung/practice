@@ -89,6 +89,7 @@ body {
 /* 모바일 버전 */
 @media screen and (max-width: 480px) {
   .container {
+    width: 100%;
     position: relative;
     margin: 0 auto;
   }
@@ -162,13 +163,7 @@ body {
     text-align: center;
     width: 19.8%;
   }
-  .sub_menu_phone_agency {
-    position: absolute;
-    text-align: center;
-  }
-  .sub_menu_phone_agency li:hover {
-    color: #fff;
-  }
+
   .sub_menu_shop {
     width: 33.1%;
   }
@@ -204,5 +199,73 @@ body {
     left: 0;
     display: block;
     margin-top: 10px;
+  }
+  /* 메인영역 */
+  main{
+    margin-top: 6px;
+  }
+  /* 셀폰 상품영역 */
+  /* 셀폰 상품 카드 영역*/
+  .cellphone_phone_card {
+    position: relative;
+    /* margin-top: 15px; */
+    border: 1px solid #ededed;
+    width: 99%;
+    /* float: left; */
+  }
+  .cellphone_phone_card:nth-of-type(odd) {
+    float: right;
+  }
+   .cellphone_phone_icon_heart {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  .cellphone_img {
+    padding-top: 10px;
+    width: 40%;
+    float: left;
+  }
+  .cellphone_img img {
+    float: left;
+    width: 100%;
+  }
+  .cellphone_phone_menu {
+    border-left: 0.5px solid #ededed;
+    padding: 10px 15px;
+    line-height: 1.5;
+    width: 50%;
+    float: left;
+  }
+  .cellphone_phone_news_agency {
+    font-size: 12px;
+  }
+  .cellphone_phone_title {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .cellphone_phone_sale {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff2247;
+  }
+  .cellphone_phone_price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .cellphone_phone_original_price {
+    color: #aeaeae;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+  .cellphone_phone_contents {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8e8e8e;
+    font-size: 11px;
+  }
+  .cellphone_phone_monthly_price {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
   }
 }
