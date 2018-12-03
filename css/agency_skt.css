@@ -204,73 +204,305 @@ body {
   main {
     margin-top: 6px;
   }
-  /* 셀폰 상품영역 */
-  .cellphone_phone_product {
+  /* skt 폰 상품영역 */
+  .skt_phone_product {
     overflow: hidden;
   }
-  /* 셀폰 상품 카드 영역*/
-  .cellphone_phone_card {
+  /* skt 폰 상품 카드 영역*/
+  .skt_phone_card {
     position: relative;
-    border: 1px solid #ededed;
     width: 100%;
     height: 100%;
-    /* padding: 10px 0px; */
-    /* float: left; */
+    border-bottom: 0.5px solid #ededed;
+  }
+  .skt_phone_card img {
+    width: 100%;
+    height: 100%;
   }
 
-  .cellphone_phone_icon_heart {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
-  .cellphone_img {
-    border-right: 0.5px solid #ededed;
-    /* padding-top: 8px; */
-    width: 40%;
-    float: left;
-    height: 151px;
-  }
-  .cellphone_img img {
-    /* float: left; */
-    width: 100%;
-    height: 100%;
-  }
-  .cellphone_phone_menu {
-    /* border-left: 0.5px solid #ededed; */
+  .skt_phone_menu {
+    position: relative;
     padding: 10px 15px;
     line-height: 1.5;
-    width: 50%;
-    float: left;
   }
-  .cellphone_phone_news_agency {
-    font-size: 12px;
+  .skt_phone_menu_icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 15px;
   }
-  .cellphone_phone_title {
+  .skt_phone_agency {
+    color: #555555;
+    font-size: 11px;
+  }
+  .skt_phone_title {
+    font-size: 14px;
     font-weight: bold;
-    font-size: 15px;
   }
-  .cellphone_phone_sale {
+  .skt_phone_sale {
     font-weight: bold;
     font-size: 16px;
     color: #ff2247;
   }
-  .cellphone_phone_price {
+  .skt_phone_price {
     font-size: 16px;
     font-weight: bold;
   }
-  .cellphone_phone_original_price {
+  .skt_phone_original_price {
     color: #aeaeae;
     text-decoration: line-through;
     font-size: 12px;
   }
-  .cellphone_phone_contents {
+  /* 고객구분 영역 */
+  .customer_segment {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
     padding-bottom: 10px;
-    border-bottom: 1px solid #8e8e8e;
-    font-size: 11px;
   }
-  .cellphone_phone_monthly_price {
-    font-size: 16px;
+  .cs_title {
     font-weight: bold;
-    text-align: right;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .cs_menu {
+    padding: 10px 10px;
+  }
+  .cs_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 18%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .cs_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .cs_menu li a {
+    color: #8e8e8e;
+  }
+  .cs_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 가입유형 영역 */
+  .type_of_subscription {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .tos_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .tos_menu {
+    padding: 10px 10px;
+  }
+  .tos_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .tos_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .tos_menu li a {
+    color: #8e8e8e;
+  }
+  .tos_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 일시불 할부영역 영역 */
+  .installment {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .installment_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .installment_menu {
+    padding: 10px 10px;
+  }
+  .installment_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .installment_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .installment_menu li a {
+    color: #8e8e8e;
+  }
+  .installment_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 할부 기간 영역 */
+  .installment_period {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .installment_period_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .installment_period_menu {
+    padding: 10px 10px;
+  }
+  .installment_period_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .installment_period_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .installment_period_menu li a {
+    color: #8e8e8e;
+  }
+  .installment_period_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 할인유형 영역 */
+  .discount_type {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .discount_type_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .discount_type_menu {
+    padding: 10px 10px;
+  }
+  .discount_type_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .discount_type_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .discount_type_menu li a {
+    color: #8e8e8e;
+  }
+  .discount_type_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 색상선택 영역 */
+  .select_color {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .select_color_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .select_color_menu {
+    padding: 10px 10px;
+  }
+  .select_color_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .select_color_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .select_color_menu li a {
+    color: #8e8e8e;
+  }
+  .select_color_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 요금제 선택 영역 */
+  .select_plan {
+    position: relative;
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .select_plan_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .select_plan_other_fares {
+    position: absolute;
+    font-size: 10px;
+    right: 10px;
+    top: 15px;
+  }
+  .spof_a {
+    text-decoration: underline;
+  }
+  .select_plan_menu {
+    padding: 10px 10px;
+  }
+  .select_plan_menu li {
+    position: relative;
+    border: 0.5px solid #8e8e8e;
+    padding: 12px 15px;
+    width: 92%;
+    float: left;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .select_plan_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .select_plan_menu li a {
+    color: #8e8e8e;
+  }
+  .select_plan_menu li a:hover {
+    color: #4444e2;
+  }
+  .select_plan_menu_title {
+    font-weight: bold;
+    font-size: 12px;
+    color: #4444e2;
+  }
+  .select_plan_menu_price {
+    font-weight: bold;
+    font-size: 12px;
+    color: #4444e2;
+  }
+  .select_plan_menu_learn_more {
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    padding: 9px 15px;
+    font-size: 11px;
   }
 }
