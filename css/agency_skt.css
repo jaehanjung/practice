@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+  text-decoration: none;
+}
+span,
+p,
+li,
+a {
+  color: #181818;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.plan {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: #ededed;
+}
+.plan_title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.plan_menu {
+  font-size: 12px;
+  top: 30%;
+  position: absolute;
+  right: 5px;
+  color: #888888;
+}
+
+/* 숨김 콘텐츠 */
+
+.readable-hidden,
+.a11y,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* 본문 스타일 */
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  /* 헤더 메뉴영역 */
+  .header_menu {
+    width: 100%;
+    height: 60px;
+  }
+  .icon-menu {
+    margin-top: 8px;
+    font-size: 30px;
+    width: 15%;
+    float: left;
+    color: #ededed;
+    text-align: center;
+  }
+  .logo {
+    width: 40%;
+    float: left;
+  }
+  .logo a {
+    font-size: 20px;
+    color: #4444e2;
+  }
+  .icon_more {
+    width: 32%;
+    margin-top: 13px;
+    margin-left: 20px;
+    float: right;
+  }
+  .icon_btn {
+    font-size: 20px;
+    width: 35px;
+    float: left;
+  }
+  /* 네비영역 */
+  .navigation {
+    height: 50px;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+  }
+  .menu_more {
+    text-align: center;
+    height: 20px;
+    border-bottom: 2px solid #ededed;
+  }
+  .menu_list {
+    width: 25%;
+    font-size: 15px;
+    color: #111111;
+    float: left;
+  }
+  .menu_item:hover {
+    border-bottom: 2px solid #4444e2;
+    color: #4444e2;
+  }
+  .sub_menu {
+    display: none;
+    list-style-type: disc;
+  }
+  .sub_menu li a {
+    color: #181818;
+  }
+  .sub_menu_home {
+    width: 100%;
+    text-align: center;
+  }
+  .sub_menu_phone {
+    text-align: center;
+    width: 19.8%;
+  }
+
+  .sub_menu_shop {
+    width: 33.1%;
+  }
+  .sub_menu li {
+    position: relative;
+    background-color: #fff;
+    float: left;
+  }
+
+  .sub_menu li:hover {
+    border: 1px solid #4444e2;
+    background-color: #4444e2;
+  }
+  .sub_menu li a:hover {
+    color: #fff;
+  }
+
+  .sub_menu_calender {
+    width: 33.1%;
+  }
+  .sub_menu li.calender {
+    background-color: #fff;
+    border: 0;
+  }
+  .sub_menu a {
+    text-align: center;
+    color: white;
+  }
+  .active.sub_menu {
+    width: 100%;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    display: block;
+    margin-top: 10px;
+  }
+  /* 메인영역 */
+  main {
+    margin-top: 6px;
+  }
+  /* 셀폰 상품영역 */
+  .cellphone_phone_product {
+    overflow: hidden;
+  }
+  /* 셀폰 상품 카드 영역*/
+  .cellphone_phone_card {
+    position: relative;
+    border: 1px solid #ededed;
+    width: 100%;
+    height: 100%;
+    /* padding: 10px 0px; */
+    /* float: left; */
+  }
+
+  .cellphone_phone_icon_heart {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  .cellphone_img {
+    border-right: 0.5px solid #ededed;
+    /* padding-top: 8px; */
+    width: 40%;
+    float: left;
+    height: 151px;
+  }
+  .cellphone_img img {
+    /* float: left; */
+    width: 100%;
+    height: 100%;
+  }
+  .cellphone_phone_menu {
+    /* border-left: 0.5px solid #ededed; */
+    padding: 10px 15px;
+    line-height: 1.5;
+    width: 50%;
+    float: left;
+  }
+  .cellphone_phone_news_agency {
+    font-size: 12px;
+  }
+  .cellphone_phone_title {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .cellphone_phone_sale {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff2247;
+  }
+  .cellphone_phone_price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .cellphone_phone_original_price {
+    color: #aeaeae;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+  .cellphone_phone_contents {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8e8e8e;
+    font-size: 11px;
+  }
+  .cellphone_phone_monthly_price {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+  }
+}
