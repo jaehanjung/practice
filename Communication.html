@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Communication</title>
+      <link rel="stylesheet" href="/node_modules/swiper/dist/css/swiper.min.css" />
     <link
       rel="stylesheet"
       href="/fontello-6899ec54/css/fontello-embedded.css"
@@ -38,16 +39,18 @@
               <li class="menu_list">
                 <a href="#" class="menu_item">통신</a>
                 <ul class="sub_menu">
-                        <li class="sub_menu_phone">
-                          <a href="communication_cellphone.html">휴대폰</a>
-                          <ul class="sub_menu_agency">
-                            <li class="sub_menu_phone_agency"><a href="agency_skt.html">skt</a></li>
-                            <li class="sub_menu_phone_agency"><a href="#">kt</a></li>
-                            <li class="sub_menu_phone_agency">
-                              <a href="#">LGU+</a>
-                            </li>
-                          </ul>
-                        </li>
+                  <li class="sub_menu_phone">
+                    <a href="communication_cellphone.html">휴대폰</a>
+                    <ul class="sub_menu_agency">
+                      <li class="sub_menu_phone_agency">
+                        <a href="agency_skt.html">skt</a>
+                      </li>
+                      <li class="sub_menu_phone_agency"><a href="#">kt</a></li>
+                      <li class="sub_menu_phone_agency">
+                        <a href="#">LGU+</a>
+                      </li>
+                    </ul>
+                  </li>
                   <li class="sub_menu_phone"><a href="#">통신기기</a></li>
                   <li class="sub_menu_phone"><a href="#">알뜰폰</a></li>
                   <li class="sub_menu_phone"><a href="#">선불폰</a></li>
@@ -99,35 +102,22 @@
       <!-- 메인영역 -->
       <main class="main">
         <!-- 메인캐러셀영역 -->
-        <div class="carusel">
-          <div class="carusel_btn">
-            <button class="left-button icon-left-open"></button>
-            <button class="right-button icon-right-open"></button>
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/galaxynow.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/bettry.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/galaxynow.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/bettry.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/galaxynow.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/bettry.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/galaxynow.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/bettry.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/galaxynow.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/bettry.jpg" alt="" /></div>
           </div>
-          <div class="carusel_box box1">
-            <a href="#">
-              <img
-                src="http://cfile220.uf.daum.net/image/995580465B888787036800"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="carusel_box box2">
-            <a href="#">
-              <img
-                src="http://img.appstory.co.kr/@files/monthly.appstory.co.kr/thum/Bdatafile/Board/dir_90/thum4_9035.jpg"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="carusel_box box3">
-            <a href="#">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgr-KViwHjbbtyEMhNQPqD6es3zEWashtS0SqqYai0peU7wESz"
-                alt=""
-              />
-            </a>
-          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
         <!-- 공지사항 영역 -->
         <div class="notice">
@@ -155,7 +145,7 @@
         <div class="sub_banner">
           <a href="#"
             ><img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYfThkd5E7wCVw6m8IVRIW43ip6tYimhFDMagYhFbtfX22napR7Q"
+              src="/img/banner1.png"
               alt=""
           /></a>
         </div>
@@ -441,51 +431,17 @@
           }
         });
       }
-      let current = 0;
-      box[current].classList.add("active");
-      left_button.addEventListener("click", function() {
-        current = current - 1;
-        if (current < 0) {
-          current = box.length - 1;
+    </script>
+    <!-- Swiper JS -->
+    <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction"
         }
-        for (let i = 0; i < box.length; i++) {
-          box[i].classList.remove("active");
-        }
-        box[current].classList.add("active");
-      });
-      let curr = 0;
-      phone_box[curr].classList.add("active");
-      phone_left_button.addEventListener("click", function() {
-        curr = curr - 1;
-        if (curr < 0) {
-          curr = phone_box.length - 1;
-        }
-        for (let i = 0; i < box.length; i++) {
-          phone_box[i].classList.remove("active");
-        }
-        phone_box[curr].classList.add("active");
-      });
-      let right_button = document.querySelector(".right-button");
-      let phone_right_button = document.querySelector(".phone_right-button");
-      right_button.addEventListener("click", function() {
-        current = current + 1;
-        if (current > box.length - 1) {
-          current = 0;
-        }
-        for (let i = 0; i < box.length; i++) {
-          box[i].classList.remove("active");
-        }
-        box[current].classList.add("active");
-      });
-      phone_right_button.addEventListener("click", function() {
-        curr = curr + 1;
-        if (curr > phone_box.length - 1) {
-          curr = 0;
-        }
-        for (let i = 0; i < phone_box.length; i++) {
-          phone_box[i].classList.remove("active");
-        }
-        phone_box[curr].classList.add("active");
       });
     </script>
   </body>

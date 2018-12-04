@@ -7,6 +7,10 @@
     <title>home</title>
     <link
       rel="stylesheet"
+      href="/node_modules/swiper/dist/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="/fontello-6899ec54/css/fontello-embedded.css"
     />
     <link rel="stylesheet" href="/css/home.css" />
@@ -37,16 +41,18 @@
               <li class="menu_list">
                 <a href="Communication.html" class="menu_item">통신</a>
                 <ul class="sub_menu">
-                    <li class="sub_menu_phone">
-                      <a href="communication_cellphone.html">휴대폰</a>
-                      <ul class="sub_menu_agency">
-                        <li class="sub_menu_phone_agency"><a href="agency_skt.html">skt</a></li>
-                        <li class="sub_menu_phone_agency"><a href="#">kt</a></li>
-                        <li class="sub_menu_phone_agency">
-                          <a href="#">LGU+</a>
-                        </li>
-                      </ul>
-                    </li>
+                  <li class="sub_menu_phone">
+                    <a href="communication_cellphone.html">휴대폰</a>
+                    <ul class="sub_menu_agency">
+                      <li class="sub_menu_phone_agency">
+                        <a href="agency_skt.html">skt</a>
+                      </li>
+                      <li class="sub_menu_phone_agency"><a href="#">kt</a></li>
+                      <li class="sub_menu_phone_agency">
+                        <a href="#">LGU+</a>
+                      </li>
+                    </ul>
+                  </li>
                   <li class="sub_menu_phone"><a href="#">통신기기</a></li>
                   <li class="sub_menu_phone"><a href="#">알뜰폰</a></li>
                   <li class="sub_menu_phone"><a href="#">선불폰</a></li>
@@ -98,35 +104,22 @@
       <!-- 메인영역 -->
       <main class="main">
         <!-- 메인캐러셀영역 -->
-        <div class="carusel">
-          <div class="carusel_btn">
-            <button class="left-button icon-left-open"></button>
-            <button class="right-button icon-right-open"></button>
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/home.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/home2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/home.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/home2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/home.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/home2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/home.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/home2.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/home.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="/img/home2.jpg" alt="" /></div>
           </div>
-          <div class="carusel_box box1">
-            <a href="#">
-              <img
-                src="http://img.etnews.com/photonews/1807/1090318_20180711151357_287_0001.jpg"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="carusel_box box2">
-            <a href="#">
-              <img
-                src="https://s-i.huffpost.com/gen/5207698/thumbs/o-SAMSUNG-GALAXY-S8-900.jpg?4"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="carusel_box box3">
-            <a href="#">
-              <img
-                src="http://files.idg.co.kr/itworld/image/2018/09/galaxy-a7_main_1.jpg"
-                alt=""
-              />
-            </a>
-          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
         <!-- 하단메뉴영역 메뉴모음 -->
         <div class="bottom_menu">
@@ -151,7 +144,7 @@
         <div class="sub_banner">
           <a href="#"
             ><img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5sUVvV0k5ue65kVnQfoItmBLUeG5FvpYfzAu54K4a388y3ZEbyQ"
+              src="/img/Banner1.png"
               alt=""
           /></a>
         </div>
@@ -446,29 +439,17 @@
           }
         });
       }
+    </script>
+    <!-- Swiper JS -->
+    <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
 
-      let current = 0;
-      box[current].classList.add("active");
-      left_button.addEventListener("click", function() {
-        current = current - 1;
-        if (current < 0) {
-          current = box.length - 1;
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction"
         }
-        for (let i = 0; i < box.length; i++) {
-          box[i].classList.remove("active");
-        }
-        box[current].classList.add("active");
-      });
-      let right_button = document.querySelector(".right-button");
-      right_button.addEventListener("click", function() {
-        current = current + 1;
-        if (current > box.length - 1) {
-          current = 0;
-        }
-        for (let i = 0; i < box.length; i++) {
-          box[i].classList.remove("active");
-        }
-        box[current].classList.add("active");
       });
     </script>
   </body>
