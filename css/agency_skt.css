@@ -292,6 +292,7 @@ body {
     border: 1px solid #4444e2;
   }
   .cs_menu li a {
+    display: block;
     color: #8e8e8e;
   }
   .cs_menu li a:hover {
@@ -324,6 +325,7 @@ body {
     border: 1px solid #4444e2;
   }
   .tos_menu li a {
+    display: block;
     color: #8e8e8e;
   }
   .tos_menu li a:hover {
@@ -356,6 +358,7 @@ body {
     border: 1px solid #4444e2;
   }
   .installment_menu li a {
+    display: block;
     color: #8e8e8e;
   }
   .installment_menu li a:hover {
@@ -388,6 +391,7 @@ body {
     border: 1px solid #4444e2;
   }
   .installment_period_menu li a {
+    display: block;
     color: #8e8e8e;
   }
   .installment_period_menu li a:hover {
@@ -420,6 +424,7 @@ body {
     border: 1px solid #4444e2;
   }
   .discount_type_menu li a {
+    display: block;
     color: #8e8e8e;
   }
   .discount_type_menu li a:hover {
@@ -452,6 +457,7 @@ body {
     border: 1px solid #4444e2;
   }
   .select_color_menu li a {
+    display: block;
     color: #8e8e8e;
   }
   .select_color_menu li a:hover {
