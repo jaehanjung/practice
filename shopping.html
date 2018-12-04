@@ -7,6 +7,10 @@
     <title>shopping</title>
     <link
       rel="stylesheet"
+      href="/node_modules/swiper/dist/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="/fontello-6899ec54/css/fontello-embedded.css"
     />
     <link rel="stylesheet" href="/css/shopping.css" />
@@ -89,36 +93,23 @@
       <!-- 메인영역 -->
       <main class="main">
         <!-- 메인캐러셀영역 -->
-        <div class="carusel">
-          <div class="carusel_btn">
-            <button class="left-button icon-left-open"></button>
-            <button class="right-button icon-right-open"></button>
-          </div>
-          <div class="carusel_box box1">
-            <a href="#">
-              <img
-                src="https://t1.daumcdn.net/cfile/tistory/21051C3A57F4B75602"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="carusel_box box2">
-            <a href="#">
-              <img
-                src="http://img.appstory.co.kr/@files/monthly.appstory.co.kr/thum/Bdatafile/Board/dir_90/thum4_9035.jpg"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="carusel_box box3">
-            <a href="#">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgr-KViwHjbbtyEMhNQPqD6es3zEWashtS0SqqYai0peU7wESz"
-                alt=""
-              />
-            </a>
-          </div>
-        </div>
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
         <!-- 메인 기획전 상품영역 -->
         <div class="planned">
           <!-- 공통사용 -->
@@ -188,14 +179,19 @@
           <div class="plan">
             <span class="plan_title">추천상품</span>
             <a href="#">
-              <span class="plan_menu">전체보기<i class="icon-right-open"></i></span>
+              <span class="plan_menu"
+                >전체보기<i class="icon-right-open"></i
+              ></span>
             </a>
           </div>
           <!-- 추천상품 카드영역 공통 -->
           <div class="recommendation_card_more clearfix">
             <div class="recommendation_card">
               <a href="#">
-                <img src="http://image.nsmall.com/itemimg/4/26/734/26836734_W.jpg" alt="" />
+                <img
+                  src="http://image.nsmall.com/itemimg/4/26/734/26836734_W.jpg"
+                  alt=""
+                />
                 <div class="recommendation_menu">
                   <p class="recommendation_title">
                     [행사] 서래푸드 캘리포니아 구운아몬드 400g*3
@@ -208,7 +204,10 @@
             </div>
             <div class="recommendation_card">
               <a href="#">
-                <img src="https://t1.daumcdn.net/cfile/tistory/99A72A3B5A48494B2E" alt="" />
+                <img
+                  src="https://t1.daumcdn.net/cfile/tistory/99A72A3B5A48494B2E"
+                  alt=""
+                />
                 <div class="recommendation_menu">
                   <p class="recommendation_title">
                     [CGV] 영화관람권 1매 /평일,주말 예매/실시간
@@ -221,7 +220,10 @@
             </div>
             <div class="recommendation_card">
               <a href="#">
-                <img src="http://gdimg.gmarket.co.kr/991158255/still/600?ver=1504768643" alt="" />
+                <img
+                  src="http://gdimg.gmarket.co.kr/991158255/still/600?ver=1504768643"
+                  alt=""
+                />
                 <div class="recommendation_menu">
                   <p class="recommendation_title">
                     [메가박스] 영화관람권 1매+평일,주말 예매/실시간
@@ -234,7 +236,10 @@
             </div>
             <div class="recommendation_card">
               <a href="#">
-                <img src="http://gdimg.gmarket.co.kr/1163073734/still/600?ver=1513001103" alt="" />
+                <img
+                  src="http://gdimg.gmarket.co.kr/1163073734/still/600?ver=1513001103"
+                  alt=""
+                />
                 <div class="recommendation_menu">
                   <p class="recommendation_title">
                     [BAZAAR] 코듀로이 양털 극세사 이불베개 세트
@@ -254,9 +259,11 @@
       let SubMenu = document.querySelectorAll(".sub_menu");
       let left_button = document.querySelector(".left-button");
       let box = document.querySelectorAll(".carusel_box");
+      let phone_left_button = document.querySelector(".phone_left-button");
+      let phone_box = document.querySelectorAll(".phone_carusel_box");
       console.log(MenuList);
       for (let i = 0; i < MenuList.length; i++) {
-        MenuList[i].addEventListener("click", function() {
+        MenuList[i].addEventListener("click", function () {
           if (SubMenu[i].classList.contains("active")) {
             SubMenu[i].classList.remove("active");
           } else {
@@ -267,29 +274,17 @@
           }
         });
       }
-
-      let current = 0;
-      box[current].classList.add("active");
-      left_button.addEventListener("click", function() {
-        current = current - 1;
-        if (current < 0) {
-          current = box.length - 1;
+    </script>
+    <!-- Swiper JS -->
+    <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction"
         }
-        for (let i = 0; i < box.length; i++) {
-          box[i].classList.remove("active");
-        }
-        box[current].classList.add("active");
-      });
-      let right_button = document.querySelector(".right-button");
-      right_button.addEventListener("click", function() {
-        current = current + 1;
-        if (current > box.length - 1) {
-          current = 0;
-        }
-        for (let i = 0; i < box.length; i++) {
-          box[i].classList.remove("active");
-        }
-        box[current].classList.add("active");
       });
     </script>
   </body>
