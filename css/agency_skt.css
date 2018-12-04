@@ -160,7 +160,6 @@ body {
     width: 100%;
     text-align: center;
   }
-  /* 고칠부분 */
   .sub_menu_phone {
     text-align: center;
     width: 19.8%;
@@ -176,12 +175,11 @@ body {
   .sub_menu_phone_agency {
     float: left;
     width: 33%;
-    font-weight: bold;
   }
   .sub_menu_shop {
     width: 33.1%;
   }
-  .sub_menu_phone a:hover{
+  .sub_menu_phone a:hover {
     color: #fff;
   }
 
@@ -194,6 +192,11 @@ body {
   .sub_menu_phone_agency a:hover {
     border-bottom: 0.5px solid;
     color: #111111;
+    font-weight: bold;
+  }
+  .sub_menu_phone_agency a::after{
+    content: "";
+    width: 50px;
   }
   .sub_menu_calender {
     width: 33.1%;
@@ -215,7 +218,7 @@ body {
     margin-top: 10px;
   }
   /* 메인영역 */
- 
+
   /* skt 폰 상품영역 */
   .skt_phone_product {
     overflow: hidden;
