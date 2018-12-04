@@ -127,7 +127,7 @@ body {
   }
   /* 네비영역 */
   .navigation {
-    height: 50px;
+    height: 74px;
   }
   .menu {
     position: relative;
@@ -159,26 +159,41 @@ body {
     width: 100%;
     text-align: center;
   }
-  .sub_menu_phone {
+ .sub_menu_phone {
     text-align: center;
     width: 19.8%;
+    float: left;
+    background-color: #fff;
+  }
+  .sub_menu_agency {
+     position: absolute;
+    width: 100%;
+    left: 0;
+    top: 26px;
+  }
+ 
+  .sub_menu_phone_agency {
+    float: left;
+    width: 33%;
+    font-weight: bold;
   }
   .sub_menu_shop {
     width: 33.1%;
   }
-  .sub_menu li {
-    background-color: #fff;
-    float: left;
-  }
-
-  .sub_menu li:hover {
-    border: 1px solid #4444e2;
-    background-color: #4444e2;
-  }
-  .sub_menu li a:hover {
+  .sub_menu_phone a:hover {
     color: #fff;
   }
 
+  .sub_menu_phone:hover {
+    border: 1px solid #4444e2;
+    background-color: #4444e2;
+    color: #fff;
+  }
+
+  .sub_menu_phone_agency a:hover {
+    border-bottom: 0.5px solid;
+    color: #111111;
+  }
   .sub_menu_calender {
     width: 33.1%;
   }
