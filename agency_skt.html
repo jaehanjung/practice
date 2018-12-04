@@ -7,6 +7,10 @@
     <title>agency_skt</title>
     <link
       rel="stylesheet"
+      href="/node_modules/swiper/dist/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="/fontello-6899ec54/css/fontello-embedded.css"
     />
     <link rel="stylesheet" href="/css/agency_skt.css" />
@@ -100,9 +104,21 @@
       <main class="main">
         <!-- skt 탭 상품영역 -->
         <div class="skt_phone_product">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/phone.png" alt="" />
+              </div>
+              <div class="swiper-slide"><img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-1-300x300.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="https://www.ereyon.com.tr//UserFiles/ProductImages/0/iphonex256gb/orj/apple-iphone-x-256gb-gumus-285190.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="http://file2.nocutnews.co.kr/newsroom/image/2018/09/20/20180920111737412480_0_710_400.jpg" alt=""></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
           <div class="skt_phone_card">
-            <a href="#"
-              ><img src="/img/phone.png" alt="" />
+            <a href="#">
               <div class="skt_phone_menu">
                 <p class="skt_phone_agency">SKT휴대폰</p>
                 <p class="skt_phone_title">[애플] 아이폰X 256G</p>
@@ -215,51 +231,17 @@
           }
         });
       }
-      let current = 0;
-      box[current].classList.add("active");
-      left_button.addEventListener("click", function() {
-        current = current - 1;
-        if (current < 0) {
-          current = box.length - 1;
+    </script>
+    <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
         }
-        for (let i = 0; i < box.length; i++) {
-          box[i].classList.remove("active");
-        }
-        box[current].classList.add("active");
-      });
-      let curr = 0;
-      phone_box[curr].classList.add("active");
-      phone_left_button.addEventListener("click", function() {
-        curr = curr - 1;
-        if (curr < 0) {
-          curr = phone_box.length - 1;
-        }
-        for (let i = 0; i < box.length; i++) {
-          phone_box[i].classList.remove("active");
-        }
-        phone_box[curr].classList.add("active");
-      });
-      let right_button = document.querySelector(".right-button");
-      let phone_right_button = document.querySelector(".phone_right-button");
-      right_button.addEventListener("click", function() {
-        current = current + 1;
-        if (current > box.length - 1) {
-          current = 0;
-        }
-        for (let i = 0; i < box.length; i++) {
-          box[i].classList.remove("active");
-        }
-        box[current].classList.add("active");
-      });
-      phone_right_button.addEventListener("click", function() {
-        curr = curr + 1;
-        if (curr > phone_box.length - 1) {
-          curr = 0;
-        }
-        for (let i = 0; i < phone_box.length; i++) {
-          phone_box[i].classList.remove("active");
-        }
-        phone_box[curr].classList.add("active");
       });
     </script>
   </body>
