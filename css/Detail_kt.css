@@ -1,0 +1,561 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+  text-decoration: none;
+}
+span,
+p,
+li,
+a {
+  color: #181818;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.plan {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: #ededed;
+}
+.plan_title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.plan_menu {
+  font-size: 12px;
+  top: 30%;
+  position: absolute;
+  right: 5px;
+  color: #888888;
+}
+
+/* 숨김 콘텐츠 */
+
+.readable-hidden,
+.a11y,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* 본문 스타일 */
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  /* 헤더 메뉴영역 */
+  .header_menu {
+    width: 100%;
+    height: 60px;
+  }
+  .icon-menu {
+    margin-top: 8px;
+    font-size: 30px;
+    width: 15%;
+    float: left;
+    color: #ededed;
+    text-align: center;
+  }
+  .logo {
+    width: 40%;
+    float: left;
+  }
+  .logo a {
+    font-size: 20px;
+    color: #4444e2;
+  }
+  .icon_more {
+    width: 32%;
+    margin-top: 13px;
+    margin-left: 20px;
+    float: right;
+  }
+  .icon_btn {
+    font-size: 20px;
+    width: 35px;
+    float: left;
+  }
+  /* 네비영역 */
+  .navigation {
+    height: 74px;
+  }
+  .menu {
+    position: relative;
+    width: 100%;
+  }
+  .menu_more {
+    text-align: center;
+    height: 20px;
+    border-bottom: 2px solid #ededed;
+  }
+  .menu_list {
+    width: 25%;
+    font-size: 15px;
+    color: #111111;
+    float: left;
+  }
+  .menu_item:hover {
+    border-bottom: 2px solid #4444e2;
+    color: #4444e2;
+  }
+  .sub_menu {
+    display: none;
+    list-style-type: disc;
+  }
+  .sub_menu li a {
+    color: #181818;
+  }
+  .sub_menu_home {
+    width: 100%;
+    text-align: center;
+  }
+  .sub_menu_phone {
+    text-align: center;
+    width: 19.8%;
+    float: left;
+    background-color: #fff;
+  }
+  .sub_menu_agency {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 26px;
+  }
+  .sub_menu_phone_agency {
+    float: left;
+    width: 33%;
+  }
+  .sub_menu_shop {
+    width: 33.1%;
+  }
+  .sub_menu_phone a:hover {
+    color: #fff;
+  }
+
+  .sub_menu_phone:hover {
+    border: 1px solid #4444e2;
+    background-color: #4444e2;
+    color: #fff;
+  }
+
+  .sub_menu_phone_agency a:hover {
+    border-bottom: 0.5px solid;
+    color: #111111;
+    font-weight: bold;
+  }
+  .sub_menu_phone_agency a::after {
+    content: "";
+    width: 50px;
+  }
+  .sub_menu_calender {
+    width: 33.1%;
+  }
+  .sub_menu li.calender {
+    background-color: #fff;
+    border: 0;
+  }
+  .sub_menu a {
+    text-align: center;
+    color: white;
+  }
+  .active.sub_menu {
+    width: 100%;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    display: block;
+    margin-top: 10px;
+  }
+  /* 메인영역 */
+  /* 스와이프 영역 */
+  .swiper-container {
+    width: 100%;
+    height: 190px;
+  }
+  .swiper-slide img {
+    /* width: 100%; */
+    height: 100%;
+  }
+  .swiper-wrapper{
+    height: 90%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 4px;
+  }
+  /* skt 폰 상품영역 */
+  .skt_phone_product {
+    overflow: hidden;
+  }
+  /* skt 폰 상품 카드 영역*/
+  .skt_phone_card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.5px solid #ededed;
+  }
+  .skt_phone_card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .skt_phone_menu {
+    position: relative;
+    padding: 10px 15px;
+    line-height: 1.5;
+  }
+  .skt_phone_menu_icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 15px;
+  }
+  .skt_phone_agency {
+    color: #555555;
+    font-size: 11px;
+  }
+  .skt_phone_title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .skt_phone_sale {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff2247;
+  }
+  .skt_phone_price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .skt_phone_original_price {
+    color: #aeaeae;
+    text-decoration: line-through;
+    font-size: 12px;
+  }
+  /* 고객구분 영역 */
+  .customer_segment {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .cs_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .cs_menu {
+    padding: 10px 10px;
+  }
+  .cs_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 18%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .cs_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .cs_menu li a {
+    display: block;
+    color: #8e8e8e;
+  }
+  .cs_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 가입유형 영역 */
+  .type_of_subscription {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .tos_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .tos_menu {
+    padding: 10px 10px;
+  }
+  .tos_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .tos_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .tos_menu li a {
+    display: block;
+    color: #8e8e8e;
+  }
+  .tos_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 일시불 할부영역 영역 */
+  .installment {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .installment_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .installment_menu {
+    padding: 10px 10px;
+  }
+  .installment_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .installment_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .installment_menu li a {
+    display: block;
+    color: #8e8e8e;
+  }
+  .installment_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 할부 기간 영역 */
+  .installment_period {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .installment_period_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .installment_period_menu {
+    padding: 10px 10px;
+  }
+  .installment_period_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .installment_period_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .installment_period_menu li a {
+    display: block;
+    color: #8e8e8e;
+  }
+  .installment_period_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 할인유형 영역 */
+  .discount_type {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .discount_type_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .discount_type_menu {
+    padding: 10px 10px;
+  }
+  .discount_type_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .discount_type_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .discount_type_menu li a {
+    display: block;
+    color: #8e8e8e;
+  }
+  .discount_type_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 색상선택 영역 */
+  .select_color {
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .select_color_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .select_color_menu {
+    padding: 10px 10px;
+  }
+  .select_color_menu li {
+    margin-left: 5px;
+    border: 0.5px solid #8e8e8e;
+    padding: 10px 0px;
+    width: 31%;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+  }
+  .select_color_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .select_color_menu li a {
+    display: block;
+    color: #8e8e8e;
+  }
+  .select_color_menu li a:hover {
+    color: #4444e2;
+  }
+  /* 요금제 선택 영역 */
+  .select_plan {
+    position: relative;
+    width: 100%;
+    border-bottom: 0.5px solid #8e8e8e;
+    padding-bottom: 10px;
+  }
+  .select_plan_title {
+    font-weight: bold;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .select_plan_other_fares {
+    position: absolute;
+    font-size: 10px;
+    right: 10px;
+    top: 15px;
+  }
+  .spof_a {
+    text-decoration: underline;
+  }
+  .select_plan_menu {
+    padding: 10px 10px;
+  }
+  .select_plan_menu li {
+    position: relative;
+    border: 0.5px solid #8e8e8e;
+    padding: 12px 15px;
+    width: 92%;
+    float: left;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .select_plan_menu li:hover {
+    border: 1px solid #4444e2;
+  }
+  .select_plan_menu li a {
+    color: #8e8e8e;
+  }
+  .select_plan_menu li a:hover {
+    color: #4444e2;
+  }
+  .select_plan_menu_title {
+    font-weight: bold;
+    font-size: 12px;
+    color: #4444e2;
+  }
+  .select_plan_menu_price {
+    font-weight: bold;
+    font-size: 12px;
+    color: #4444e2;
+  }
+  .select_plan_menu_learn_more {
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    padding: 9px 15px;
+    font-size: 11px;
+  }
+}
