@@ -159,19 +159,19 @@ body {
     width: 100%;
     text-align: center;
   }
- .sub_menu_phone {
+  .sub_menu_phone {
     text-align: center;
     width: 19.8%;
     float: left;
     background-color: #fff;
   }
   .sub_menu_agency {
-     position: absolute;
+    position: absolute;
     width: 100%;
     left: 0;
     top: 26px;
   }
- 
+
   .sub_menu_phone_agency {
     float: left;
     width: 33%;
@@ -216,12 +216,11 @@ body {
   /* 메인 영역 */
   .main {
     background-color: #ededed;
-
   }
 
   /*메인 캐러셀 영역 */
- /* 스와이프 캐러셀 영역 */
-  .swiper-container {
+  /* 스와이프 캐러셀 영역 */
+  .swiper1 {
     width: 100%;
     height: 190px;
   }
@@ -307,7 +306,7 @@ body {
   }
 
   /* 서브베너 영역 */
-  .sub_banner{
+  .sub_banner {
     width: 100%;
     height: 100%;
   }
@@ -331,146 +330,122 @@ body {
     float: right;
   }
   /* best top phone 캐러셀 */
-  .phone_carusel {
-    position: relative;
+  /* BEST10 2번째 스와이프 캐러셀 */
+  .swiper2 {
     width: 100%;
-    /* height: 194px; */
+    height: 280px;
   }
-  .phone_carusel_btn {
-    /* background-color: #181818; */
-    opacity: 0.5;
+  .swiper2-slide {
+    border: 0.5px solid #8e8e8e;
+    height: 250px;
+    overflow: hidden;
+  }
+  .phone_carusel_num {
+    font-size: 14px;
+    font-weight: bold;
+    top: 10px;
+    left: 15px;
     position: absolute;
-    display: inline-block;
-    bottom: 13px;
-    right: 0;
+    z-index: 10;
   }
-  .phone_left-button {
-    border: 0;
-    opacity: 0.5;
-  }
-  .phone_right-button {
-    border: 0;
-    opacity: 0.5;
-  }
-  .phone_carusel_box {
-    display: none;
-  }
-  .active.phone_carusel_box {
-    border-bottom: 0.5px solid #111111;
-    border-top: 0.5px solid #111111;
-    height: 255px;
-    display: block;
-  }
-  .phone_carusel_box1 {
-    border: 1px solid #8e8e8e;
-    margin: 10px 10px;
-    float: left;
-    width: 43.7%;
-  }
-  .phone_carusel_box2 {
-    border: 1px solid #8e8e8e;
-    margin: 10px 10px;
-    float: left;
-    width: 43.7%;
-  }
-  .phone_carusel_box img {
+  .phone_img {
+    left: 0;
+    top: 1px;
+    position: absolute;
     width: 100%;
     height: 155px;
   }
+  .swiper2 img {
+    width: 99%;
+    height: 100%;
+  }
   .phone_carusel_menu {
-    margin: 5px 15px;
+    padding: 10px 17px;
+    bottom: 17px;
+    left: 0;
+    width: 79%;
+    position: absolute;
   }
   .phone_carusel_agency {
-    font-size: 14px;
+    text-align: left;
+    font-size: 11px;
   }
   .phone_carusel_title {
+    text-align: left;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
   }
   .phone_carusel_price {
+    font-size: 16px;
     text-align: right;
     display: inherit;
     font-weight: bold;
   }
   /* 인기 저가폰 영역 */
-  /* low_cost_phone */
-  .low_cost_phone {
+  /* swiper3 영역 */
+  /* BEST10 2번째 스와이프 캐러셀 */
+  .swiper3 {
+    padding-top: 25px;
     background-color: #fff;
-  }
-  .low_cost_phone_carusel {
-    position: relative;
     width: 100%;
-    /* height: 194px; */
+    height: 280px;
   }
-  .low_cost_phone_carusel_btn {
-    /* background-color: #181818; */
-    opacity: 0.5;
+  .swiper3-slide {
+    border: 0.5px solid #8e8e8e;
+    height: 250px;
+    overflow: hidden;
+  }
+  .low_cost_phone_img {
+    left: 0;
+    top: 1px;
     position: absolute;
-    display: inline-block;
-    bottom: 13px;
-    right: 0;
-  }
-  .low_cost_phone_left-button {
-    border: 0;
-    opacity: 0.5;
-  }
-  .low_cost_phone_right-button {
-    border: 0;
-    opacity: 0.5;
-  }
-  .low_cost_phone_carusel_box {
-    padding-top: 15px;
-  }
-  .active.low_cost_phone_carusel_box {
-    border-bottom: 0.5px solid #111111;
-    border-top: 0.5px solid #111111;
-    height: 255px;
-    display: block;
-  }
-  .low_cost_phone_carusel_box1 {
-    border: 1px solid #8e8e8e;
-    margin: 10px 10px;
-    float: left;
-    width: 26%;
-  }
-  .low_cost_phone_carusel_box2 {
-    border: 1px solid #8e8e8e;
-    margin: 10px 10px;
-    float: left;
-    width: 26%;
-  }
-  .low_cost_phone_carusel_box3 {
-    border: 1px solid #8e8e8e;
-    margin: 10px 10px;
-    float: left;
-    width: 26%;
-  }
-  .low_cost_phone_carusel_box img {
     width: 100%;
-    height: 115px;
+    height: 155px;
   }
-  .low_cost_phone_carusel_menu {
-    margin: 5px 15px;
+  .swiper3 img {
+    width: 99%;
+    height: 100%;
   }
-  .low_cost_phone_carusel_agency {
-    font-size: 14px;
+  .low_cost_phone_menu {
+    padding: 0px 13px;
+    bottom: 0;
+    left: 0;
+    width: 79%;
+    height: 90px;
+    position: absolute;
   }
-  .low_cost_phone_carusel_title {
+  .low_cost_phone_agency {
+    text-align: left;
+    font-size: 11px;
+  }
+  .low_cost_phone_title {
+    text-align: left;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     width: 100%;
+    height: 32px;
   }
-  .low_cost_phone_carusel_price {
-    text-align: right;
-    display: inherit;
+  .low_cost_phone_price {
+    font-size: 14px;
+    text-align: left;
     font-weight: bold;
+  }
+  .low_cost_phone_month {
+    font-weight: 100;
+    font-size: 11px;
+  }
+  .low_cost_phone_view_products {
+    text-align: right;
+    font-size: 10px;
+    display: block;
+    margin-top: 6px;
   }
 
   /* 히트폰 영역 */
@@ -481,7 +456,6 @@ body {
     position: relative;
     margin-bottom: 10px;
   }
-
 
   /*히트폰 hit상품 아이콘  */
   .hit_phone_hit_product {
