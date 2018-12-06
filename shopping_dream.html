@@ -49,10 +49,14 @@
                 </ul>
               </li>
               <li class="menu_list">
-                <a href="#" class="menu_item">쇼핑</a>
+                <a href="shopping_Sales_Item.html" class="menu_item">쇼핑</a>
                 <ul class="sub_menu">
-                  <li class="sub_menu_shop"><a href="#">영업상품</a></li>
-                  <li class="sub_menu_shop"><a href="#">드림상품</a></li>
+                  <li class="sub_menu_shop">
+                    <a href="shopping_Sales_Item.html">영업상품</a>
+                  </li>
+                  <li class="sub_menu_shop">
+                    <a href="shopping_dream.html">드림상품</a>
+                  </li>
                   <li class="sub_menu_shop"><a href="#">복지상품</a></li>
                 </ul>
               </li>
@@ -93,23 +97,43 @@
       <!-- 메인영역 -->
       <main class="main">
         <!-- 메인캐러셀영역 -->
-            <!-- Swiper -->
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="/img/shopping.jpg" alt="" /></div>
-                <div class="swiper-slide"><img src="/img/shopping2.jpg" alt="" /></div>
-              </div>
-              <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/img/shopping.jpg" alt="" />
             </div>
+            <div class="swiper-slide">
+              <img src="/img/shopping2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/shopping.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/shopping2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/shopping.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/shopping2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/shopping.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/shopping2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/shopping.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/shopping2.jpg" alt="" />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
         <!-- 메인 기획전 상품영역 -->
         <div class="planned">
           <!-- 공통사용 -->
@@ -174,8 +198,9 @@
             </a>
           </div>
         </div>
-        <!-- 추천 상품 영역 -->
-        <div class="recommendation">
+        <!-- 추천 상품 영역 공통 -->
+        <div class="recommendation clearfix">
+          <!-- 공통사용 -->
           <div class="plan">
             <span class="plan_title">추천상품</span>
             <a href="#">
@@ -185,13 +210,13 @@
             </a>
           </div>
           <!-- 추천상품 카드영역 공통 -->
-          <div class="recommendation_card_more clearfix">
+          <div class="recommendation_card_more">
             <div class="recommendation_card">
               <a href="#">
-                <img
-                  src="http://image.nsmall.com/itemimg/4/26/734/26836734_W.jpg"
-                  alt=""
-                />
+                <div class="recommendation_img">
+                  <img src="/img/dream_food.png" alt="" />
+                </div>
+
                 <div class="recommendation_menu">
                   <p class="recommendation_title">
                     [행사] 서래푸드 캘리포니아 구운아몬드 400g*3
@@ -204,13 +229,13 @@
             </div>
             <div class="recommendation_card">
               <a href="#">
-                <img
-                  src="https://t1.daumcdn.net/cfile/tistory/99A72A3B5A48494B2E"
-                  alt=""
-                />
+                <div class="recommendation_img">
+                  <img src="/img/dream_cgv.png" alt="" />
+                </div>
+
                 <div class="recommendation_menu">
                   <p class="recommendation_title">
-                    [CGV] 영화관람권 1매 /평일,주말 예매/실시간
+                    [CGV] 영화관람권 1매/평일,주말 예매/실시간
                   </p>
                   <span class="recommendation_price">
                     <strong>7,500원</strong>
@@ -220,32 +245,32 @@
             </div>
             <div class="recommendation_card">
               <a href="#">
-                <img
-                  src="http://gdimg.gmarket.co.kr/991158255/still/600?ver=1504768643"
-                  alt=""
-                />
+                <div class="recommendation_img">
+                  <img src="/img/dream_mega.png" alt="" />
+                </div>
+
                 <div class="recommendation_menu">
                   <p class="recommendation_title">
-                    [메가박스] 영화관람권 1매+평일,주말 예매/실시간
+                    [메가박스] 영화관람권 1매+오리지널 팝콘 라지
                   </p>
                   <span class="recommendation_price">
-                    <strong>12,500원</strong>
+                    <strong>10,500원</strong>
                   </span>
                 </div>
               </a>
             </div>
             <div class="recommendation_card">
               <a href="#">
-                <img
-                  src="http://gdimg.gmarket.co.kr/1163073734/still/600?ver=1513001103"
-                  alt=""
-                />
+                <div class="recommendation_img">
+                  <img src="/img/dream_bed.png" alt="" />
+                </div>
+
                 <div class="recommendation_menu">
                   <p class="recommendation_title">
                     [BAZAAR] 코듀로이 양털 극세사 이불베개 세트
                   </p>
                   <span class="recommendation_price">
-                    <strong>7,500원</strong>
+                    <strong>15,500원</strong>
                   </span>
                 </div>
               </a>
@@ -263,7 +288,7 @@
       let phone_box = document.querySelectorAll(".phone_carusel_box");
       console.log(MenuList);
       for (let i = 0; i < MenuList.length; i++) {
-        MenuList[i].addEventListener("click", function () {
+        MenuList[i].addEventListener("click", function() {
           if (SubMenu[i].classList.contains("active")) {
             SubMenu[i].classList.remove("active");
           } else {
@@ -277,12 +302,12 @@
     </script>
     <!-- Swiper JS -->
     <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
-    
+
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".swiper-container", {
         autoplay: {
-          delay: 3000,
+          delay: 3000
         },
         pagination: {
           el: ".swiper-pagination",

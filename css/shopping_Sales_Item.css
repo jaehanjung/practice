@@ -88,7 +88,7 @@ body {
 
 /* 모바일 버전 */
 @media screen and (max-width: 480px) {
- .container {
+  .container {
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -222,7 +222,7 @@ body {
     background-color: #464343;
     opacity: 0.5;
     border: 0.5px solid #464343;
-    right: 0; 
+    right: 0;
     bottom: 0;
     text-align: center;
     display: block;
@@ -250,7 +250,7 @@ body {
     -webkit-align-items: center;
     align-items: center;
   }
-  /* 기획전 상품영역 */
+  /* 브랜드 상품영역 */
   .plan {
     position: relative;
     text-align: center;
@@ -269,62 +269,131 @@ body {
     color: #888888;
   }
 
-  /* 메인 상품영역 */
-  .planned_product_card {
-    margin-bottom: 10px;
-  }
-  .planned_product_card:first-child {
-    margin-top: 0;
-  }
-  .planned_product_card img {
+  /* 메인 브랜드 상품영역 */
+  .brand_tube {
     width: 100%;
-    height: 177px;
-  }
-  .planned_product_menu {
-    margin-top: -3px;
     background-color: #fff;
-    padding: 0px 0px 0px 20px;
+    float: left;
   }
-  .planned_product_title {
-    color: #181818;
+  .brand_menu {
+    padding: 5px 5px;
+    float: left;
   }
-  .planned_product_contents {
-    font-size: 12px;
+  .brand_name {
+    width: 33%;
+    float: left;
+    border-right: 0.5px solid #ededed;
+    border-bottom: 0.5px solid #ededed;
   }
-  .planned_product_go {
-    float: right;
+
+  .odd {
+    border-right: 0;
+  }
+  .add {
+    border-bottom: 0;
+  }
+  .brand_name img {
+    border: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .brand_name p {
+    padding-bottom: 7px;
     font-size: 12px;
     color: #888888;
-    margin-right: 10px;
-    margin-top: 4px;
+    text-align: center;
+  }
+  /*영업상품영역 BEST상품영역 */
+  /* 서브베너 영역 */
+  .sub_banner {
+    width: 100%;
+    height: 62px;
+  }
+  .sub_banner a {
+    display: inline-block;
+  }
+  .sub_banner img {
+    width: 100%;
+    height: 100%;
+  }
+  /* Sales_best 카드영역 */
+
+  .Sales_best_card {
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #fff;
+  }
+  .Sales_best_card a {
+    display: inline-block;
+  }
+  .Sales_best_icon_heart {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  }
+  .Sales_best_card:first-child {
+    margin-top: 0;
+  }
+  .Sales_best_img {
+    width: 100%;
+    height: 176px;
+  }
+  .Sales_best_img img {
+    width: 100%;
+    height: 100%;
+  }
+  .Sales_best_menu {
+    margin-top: -3px;
+    background-color: #fff;
+    padding: 0px 15px 0px 15px;
+  }
+  .Sales_best_title {
+    font-size: 12px;
+    color: #181818;
+  }
+  .Sales_best_contents {
+    font-size: 12px;
+    color: #181818;
+    font-weight: bold;
+  }
+  .Sales_best_price {
+    font-weight: bold;
+  }
+  .Sales_best_option {
+    color: #aeaeae;
+    font-size: 12px;
   }
   /* 추천상품영역 */
   .recommendation {
+    background-color: #fff;
     margin-top: -10px;
   }
+  .recommendation a {
+    display: inline-block;
+  }
   .recommendation_card_more {
-    padding: 10px 10px;
+    padding: 15px 15px;
     float: left;
   }
   .recommendation_card {
     border: 1px solid #ededed;
     float: left;
-    width: 42.6%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    height: 225px;
-  }
-  .recommendation_card img {
-    max-width: 100%;
-    height: 125px;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
+    width: 47%;
     margin-bottom: 10px;
   }
+  .recommendation_card:nth-child(even) {
+    float: right;
+  }
+  .recommendation_img {
+    width: 100%;
+    height: 125px;
+  }
+  .recommendation_card img {
+    width: 100%;
+    height: 100%;
+  }
   .recommendation_menu {
-    margin: 10px;
+    padding: 10px 10px;
   }
   .recommendation_title {
     color: black;

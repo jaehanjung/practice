@@ -374,7 +374,7 @@ body {
   /* 홈메인 상품 통신사및 월가격 */
   .home_news_agency_menu {
     float: right;
-    padding-right: 20px;
+    padding-right: 15px;
     line-height: 1.8;
   }
   .home_news_agency {
