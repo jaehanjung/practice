@@ -108,7 +108,7 @@ body {
     text-align: center;
   }
   .logo {
-    width: 40%;
+    width: 43%;
     float: left;
   }
   .logo a {
@@ -116,7 +116,7 @@ body {
     color: #4444e2;
   }
   .icon_more {
-    width: 32%;
+    width: 35%;
     margin-top: 13px;
     margin-left: 20px;
     float: right;
@@ -320,7 +320,7 @@ body {
     padding: 10px 0px;
     width: 18%;
     float: left;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
   }
   .cs_menu li:hover {

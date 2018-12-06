@@ -107,7 +107,7 @@ body {
     text-align: center;
   }
   .logo {
-    width: 40%;
+    width: 43%;
     float: left;
   }
   .logo a {
@@ -115,7 +115,7 @@ body {
     color: #4444e2;
   }
   .icon_more {
-    width: 32%;
+    width: 35%;
     margin-top: 13px;
     margin-left: 20px;
     float: right;
@@ -234,7 +234,7 @@ body {
     background-color: #464343;
     opacity: 0.5;
     border: 0.5px solid #464343;
-    left: 300px;
+    right: 0;
     bottom: 0;
     text-align: center;
     display: block;

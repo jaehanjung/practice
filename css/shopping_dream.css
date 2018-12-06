@@ -88,13 +88,13 @@ body {
 
 /* 모바일 버전 */
 @media screen and (max-width: 480px) {
-  .container {
+ .container {
     width: 100%;
     position: relative;
     margin: 0 auto;
   }
-  /* 헤더 메뉴영역 */
 
+  /* 헤더 메뉴영역 */
   .header_menu {
     width: 100%;
     height: 60px;
@@ -128,7 +128,7 @@ body {
   }
   /* 네비영역 */
   .navigation {
-    height: 74px;
+    height: 50px;
   }
   .menu {
     position: relative;
@@ -163,42 +163,28 @@ body {
   .sub_menu_phone {
     text-align: center;
     width: 19.8%;
-    float: left;
-    background-color: #fff;
-  }
-  .sub_menu_agency {
-     position: absolute;
-    width: 100%;
-    left: 0;
-    top: 26px;
-  }
- 
-  .sub_menu_phone_agency {
-    float: left;
-    width: 33%;
-    font-weight: bold;
   }
   .sub_menu_shop {
     width: 33.1%;
   }
-  .sub_menu_phone a:hover {
-    color: #fff;
+  .sub_menu li {
+    background-color: #fff;
+    float: left;
   }
 
-  .sub_menu_phone:hover {
+  .sub_menu li:hover {
     border: 1px solid #4444e2;
     background-color: #4444e2;
+  }
+  .sub_menu li a:hover {
     color: #fff;
   }
 
-  .sub_menu_phone_agency a:hover {
-    border-bottom: 0.5px solid;
-    color: #111111;
-  }
   .sub_menu_calender {
     width: 33.1%;
   }
-  .sub_menu li.calender {
+
+  .sub_menu li.sub_menu_calender {
     background-color: #fff;
     border: 0;
   }
@@ -214,77 +200,136 @@ body {
     display: block;
     margin-top: 10px;
   }
-  /* 메인영역 */
-  main {
-    margin-top: 6px;
-  }
-  /* 셀폰 상품영역 */
-  .cellphone_phone_product {
-    overflow: hidden;
-  }
-  /* 셀폰 상품 카드 영역*/
-  .cellphone_phone_card {
-    position: relative;
-    border: 1px solid #ededed;
-    width: 100%;
-    height: 100%;
-    /* padding: 10px 0px; */
-    /* float: left; */
+  /* 메인 영역 */
+  .main {
+    background-color: #ededed;
+    margin-top: 12px;
   }
 
-  .cellphone_phone_icon_heart {
-    position: absolute;
-    right: 15px;
-    top: 10px;
+  /*메인 캐러셀 영역 */
+  /* 스와이프 캐러셀 영역 */
+  .swiper-container {
+    width: 100%;
+    height: 190px;
   }
-  .cellphone_img {
-    border-right: 0.5px solid #ededed;
-    /* padding-top: 8px; */
-    width: 40%;
-    float: left;
-    height: 151px;
-  }
-  .cellphone_img img {
-    /* float: left; */
+  .swiper-slide img {
     width: 100%;
     height: 100%;
   }
-  .cellphone_phone_menu {
-    /* border-left: 0.5px solid #ededed; */
-    padding: 10px 15px;
-    line-height: 1.5;
-    width: 50%;
+  .swiper-pagination-fraction {
+    font-size: 12px;
+    color: #fff;
+    background-color: #464343;
+    opacity: 0.5;
+    border: 0.5px solid #464343;
+    right: 0; 
+    bottom: 0;
+    text-align: center;
+    display: block;
+    width: 56px;
+  }
+  .swiper-pagination-fraction span {
+    color: #fff;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  /* 기획전 상품영역 */
+  .plan {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    background-color: #ededed;
+  }
+  .plan_title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .plan_menu {
+    font-size: 12px;
+    top: 30%;
+    position: absolute;
+    right: 5px;
+    color: #888888;
+  }
+
+  /* 메인 상품영역 */
+  .planned_product_card {
+    margin-bottom: 10px;
+  }
+  .planned_product_card:first-child {
+    margin-top: 0;
+  }
+  .planned_product_card img {
+    width: 100%;
+    height: 177px;
+  }
+  .planned_product_menu {
+    margin-top: -3px;
+    background-color: #fff;
+    padding: 0px 0px 0px 20px;
+  }
+  .planned_product_title {
+    color: #181818;
+  }
+  .planned_product_contents {
+    font-size: 12px;
+  }
+  .planned_product_go {
+    float: right;
+    font-size: 12px;
+    color: #888888;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  /* 추천상품영역 */
+  .recommendation {
+    margin-top: -10px;
+  }
+  .recommendation_card_more {
+    padding: 10px 10px;
     float: left;
   }
-  .cellphone_phone_news_agency {
-    font-size: 12px;
+  .recommendation_card {
+    border: 1px solid #ededed;
+    float: left;
+    width: 42.6%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 225px;
   }
-  .cellphone_phone_title {
+  .recommendation_card img {
+    max-width: 100%;
+    height: 125px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .recommendation_menu {
+    margin: 10px;
+  }
+  .recommendation_title {
+    color: black;
     font-weight: bold;
-    font-size: 15px;
-  }
-  .cellphone_phone_sale {
-    font-weight: bold;
-    font-size: 16px;
-    color: #ff2247;
-  }
-  .cellphone_phone_price {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .cellphone_phone_original_price {
-    color: #aeaeae;
-    text-decoration: line-through;
-    font-size: 12px;
-  }
-  .cellphone_phone_contents {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #8e8e8e;
+    margin-bottom: 5px;
     font-size: 11px;
-  }
-  .cellphone_phone_monthly_price {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: right;
   }
 }
