@@ -210,7 +210,7 @@ body {
   /* 스와이프 캐러셀 영역 */
   .swiper-container {
     width: 100%;
-    height: 190px;
+    height: 180px;
   }
   .swiper-slide img {
     width: 100%;
@@ -294,7 +294,7 @@ body {
   }
   .brand_name img {
     border: 0px;
-    width: 100%;
+    width: 99%;
     height: 100%;
   }
   .brand_name p {
