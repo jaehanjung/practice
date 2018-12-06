@@ -227,7 +227,7 @@ body {
     /* width: 100%; */
     height: 100%;
   }
-  .swiper-wrapper{
+  .swiper-wrapper {
     height: 90%;
   }
   .swiper-slide {
@@ -248,7 +248,7 @@ body {
     -webkit-align-items: center;
     align-items: center;
   }
-  .swiper-container-horizontal>.swiper-pagination-bullets {
+  .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 4px;
   }
   /* skt 폰 상품영역 */
@@ -314,6 +314,10 @@ body {
   .cs_menu {
     padding: 10px 10px;
   }
+  .chk_type_radio {
+    display: none;
+  }
+
   .cs_menu li {
     margin-left: 5px;
     border: 0.5px solid #8e8e8e;
@@ -326,11 +330,11 @@ body {
   .cs_menu li:hover {
     border: 1px solid #4444e2;
   }
-  .cs_menu li a {
+  .cs_menu label {
     display: block;
     color: #8e8e8e;
   }
-  .cs_menu li a:hover {
+  .cs_menu label:hover {
     color: #4444e2;
   }
   /* 가입유형 영역 */
@@ -359,11 +363,11 @@ body {
   .tos_menu li:hover {
     border: 1px solid #4444e2;
   }
-  .tos_menu li a {
+  .tos_menu label{
     display: block;
     color: #8e8e8e;
   }
-  .tos_menu li a:hover {
+  .tos_menu label:hover {
     color: #4444e2;
   }
   /* 일시불 할부영역 영역 */
@@ -392,11 +396,11 @@ body {
   .installment_menu li:hover {
     border: 1px solid #4444e2;
   }
-  .installment_menu li a {
+  .installment_menu label{
     display: block;
     color: #8e8e8e;
   }
-  .installment_menu li a:hover {
+  .installment_menu label:hover {
     color: #4444e2;
   }
   /* 할부 기간 영역 */
@@ -425,11 +429,11 @@ body {
   .installment_period_menu li:hover {
     border: 1px solid #4444e2;
   }
-  .installment_period_menu li a {
+  .installment_period_menu label {
     display: block;
     color: #8e8e8e;
   }
-  .installment_period_menu li a:hover {
+  .installment_period_menu label:hover {
     color: #4444e2;
   }
   /* 할인유형 영역 */
@@ -458,11 +462,11 @@ body {
   .discount_type_menu li:hover {
     border: 1px solid #4444e2;
   }
-  .discount_type_menu li a {
+  .discount_type_menu label {
     display: block;
     color: #8e8e8e;
   }
-  .discount_type_menu li a:hover {
+  .discount_type_menu label:hover {
     color: #4444e2;
   }
   /* 색상선택 영역 */
@@ -491,11 +495,11 @@ body {
   .select_color_menu li:hover {
     border: 1px solid #4444e2;
   }
-  .select_color_menu li a {
+  .select_color_menu label {
     display: block;
     color: #8e8e8e;
   }
-  .select_color_menu li a:hover {
+  .select_color_menu label:hover {
     color: #4444e2;
   }
   /* 요금제 선택 영역 */
