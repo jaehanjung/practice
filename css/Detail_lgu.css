@@ -93,19 +93,23 @@ body {
     position: relative;
     margin: 0 auto;
   }
-
   /* 헤더 메뉴영역 */
+  .header a {
+    display: inline-block;
+  }
   .header_menu {
     width: 100%;
     height: 60px;
   }
-  .icon-menu {
+  .icon_menu_bar {
     margin-top: 8px;
-    font-size: 30px;
-    width: 15%;
     float: left;
-    color: #ededed;
+    width: 15%;
     text-align: center;
+  }
+  .icon-menu {
+    color: #ededed;
+    font-size: 30px;
   }
   .logo {
     width: 43%;
@@ -116,14 +120,13 @@ body {
     color: #4444e2;
   }
   .icon_more {
-    width: 35%;
+    text-align: right;
+    width: 42%;
     margin-top: 13px;
-    margin-left: 20px;
     float: right;
   }
   .icon_btn {
     font-size: 20px;
-    width: 35px;
     float: left;
   }
   /* 네비영역 */
@@ -177,6 +180,7 @@ body {
     width: 33%;
   }
   .sub_menu_shop {
+    float: left;
     width: 33.1%;
   }
   .sub_menu_phone a:hover {
@@ -199,6 +203,7 @@ body {
     width: 50px;
   }
   .sub_menu_calender {
+    float: left;
     width: 33.1%;
   }
   .sub_menu li.calender {
@@ -227,7 +232,7 @@ body {
     /* width: 100%; */
     height: 100%;
   }
-  .swiper-wrapper{
+  .swiper-wrapper {
     height: 90%;
   }
   .swiper-slide {
@@ -248,7 +253,7 @@ body {
     -webkit-align-items: center;
     align-items: center;
   }
-  .swiper-container-horizontal>.swiper-pagination-bullets {
+  .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 4px;
   }
   /* skt 폰 상품영역 */

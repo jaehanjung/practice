@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>calculate</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/swiper/dist/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/fontello-6899ec54/css/fontello-embedded.css"
+    />
+    <link rel="stylesheet" href="/css/calculate.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- 헤더영역 공통 -->
+      <header class="header clearfix content">
+        <div class="header_menu">
+            <div class="icon_menu_bar">
+                <a href="#"> <span class="icon-menu"></span> </a>
+            </div>
+            <h1 class="logo"><a href="home.html">Dream Square</a></h1>
+            <div class="icon_more">
+                <a href="#">
+                    <div class="icon-bell-alt icon_btn"></div>
+                </a>
+                <a href="#">
+                    <div class="icon-basket icon_btn"></div>
+                </a>
+                <a href="#">
+                    <div class="icon-user icon_btn"></div>
+                </a>
+            </div>
+        </div>
+        <!-- 네비영역 공통 -->
+        <nav class="navigation">
+          <ul class="menu clearfix">
+            <div class="menu_more">
+              <li class="menu_list">
+                <a href="home.html" class="menu_item">HOME</a>
+                <ul class="sub_menu">
+                  <li class="sub_menu_home"><a href="#">HOME</a></li>
+                </ul>
+              </li>
+              <li class="menu_list">
+                <a href="Communication.html" class="menu_item">통신</a>
+                <ul class="sub_menu">
+                  <li class="sub_menu_phone"><a href="#">휴대폰</a></li>
+                  <li class="sub_menu_phone"><a href="#">통신기기</a></li>
+                  <li class="sub_menu_phone"><a href="#">알뜰폰</a></li>
+                  <li class="sub_menu_phone"><a href="#">선불폰</a></li>
+                  <li class="sub_menu_phone"><a href="#">유선</a></li>
+                </ul>
+              </li>
+              <li class="menu_list">
+                <a href="#" class="menu_item">쇼핑</a>
+                <ul class="sub_menu">
+                  <li class="sub_menu_shop">
+                    <a href="shopping_Sales_Item.html">영업상품</a>
+                  </li>
+                  <li class="sub_menu_shop">
+                    <a href="shopping_dream.html">드림상품</a>
+                  </li>
+                  <li class="sub_menu_shop"><a href="#">복지상품</a></li>
+                </ul>
+              </li>
+              <li class="menu_list">
+                <a href="#" class="menu_item">마이정산</a>
+                <ul class="sub_menu">
+                  <li class="sub_menu_calender">
+                    <select>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                    </select>
+                  </li>
+                  <li class="sub_menu_calender">
+                    <select>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </li>
+                  <li class="sub_menu_calender odd">
+                    <div class="calender_menu">
+                      <span>정산일자</span>
+                      <input id="date" type="date" value="2018-12-07" />
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <!-- 메인영역 -->
+      <main class="main">
+        <div class="calculate_menu">
+            <ul class="calculate_meneu_type">
+                <li>정산</li>
+            </ul>
+        </div>
+      </main>
+    </div>
+    <script>
+      let MenuList = document.querySelectorAll(".menu_item");
+      let SubMenu = document.querySelectorAll(".sub_menu");
+      let left_button = document.querySelector(".left-button");
+      let box = document.querySelectorAll(".carusel_box");
+      let phone_left_button = document.querySelector(".phone_left-button");
+      let phone_box = document.querySelectorAll(".phone_carusel_box");
+      console.log(MenuList);
+      for (let i = 0; i < MenuList.length; i++) {
+        MenuList[i].addEventListener("click", function() {
+          if (SubMenu[i].classList.contains("active")) {
+            SubMenu[i].classList.remove("active");
+          } else {
+            for (let j = 0; j < SubMenu.length; j++) {
+              SubMenu[j].classList.remove("active");
+            }
+            SubMenu[i].classList.add("active");
+          }
+        });
+      }
+    </script>
+    <!-- Swiper JS -->
+    <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        autoplay: {
+          delay: 3000
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction"
+        }
+      });
+    </script>
+  </body>
+</html>

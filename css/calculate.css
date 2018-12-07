@@ -93,7 +93,8 @@ body {
     position: relative;
     margin: 0 auto;
   }
-/* 헤더 메뉴영역 */
+
+ /* 헤더 메뉴영역 */
   .header a {
     display: inline-block;
   }
@@ -131,7 +132,7 @@ body {
   }
   /* 네비영역 */
   .navigation {
-    height: 74px;
+    height: 50px;
   }
   .menu {
     position: relative;
@@ -166,46 +167,33 @@ body {
   .sub_menu_phone {
     text-align: center;
     width: 19.8%;
-    float: left;
-    background-color: #fff;
-  }
-  .sub_menu_agency {
-     position: absolute;
-    width: 100%;
-    left: 0;
-    top: 26px;
-  }
- 
-  .sub_menu_phone_agency {
-    float: left;
-    width: 33%;
-    font-weight: bold;
   }
   .sub_menu_shop {
+    width: 20.1%;
+  }
+  .sub_menu li {
+    /* background-color: #fff; */
     float: left;
-    width: 33.1%;
-  }
-  .sub_menu_phone a:hover {
-    color: #fff;
   }
 
-  .sub_menu_phone:hover {
-    border: 1px solid #4444e2;
-    background-color: #4444e2;
-    color: #fff;
+  .sub_menu li a:hover {
+    color: #181818;
   }
 
-  .sub_menu_phone_agency a:hover {
-    border-bottom: 0.5px solid;
-    color: #111111;
-  }
   .sub_menu_calender {
-    float: left;
-    width: 33.1%;
+    width: 20%;
   }
-  .sub_menu li.calender {
-    background-color: #fff;
+  .sub_menu_calender.odd{
+    width: 60%;
+    float: right;
+  }
+
+  .sub_menu li.sub_menu_calender {
+    /* background-color: #fff; */
     border: 0;
+  }
+  .calender_menu span{
+      font-weight: bold;
   }
   .sub_menu a {
     text-align: center;
@@ -219,77 +207,10 @@ body {
     display: block;
     margin-top: 10px;
   }
-  /* 메인영역 */
-  main {
-    margin-top: 6px;
-  }
-  /* 셀폰 상품영역 */
-  .cellphone_phone_product {
-    overflow: hidden;
-  }
-  /* 셀폰 상품 카드 영역*/
-  .cellphone_phone_card {
-    position: relative;
-    border: 1px solid #ededed;
-    width: 100%;
-    height: 100%;
-    /* padding: 10px 0px; */
-    /* float: left; */
+  /* 메인 영역 */
+  .main {
+    background-color: #ededed;
+    /* margin-top: 12px; */
   }
 
-  .cellphone_phone_icon_heart {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-  }
-  .cellphone_img {
-    border-right: 0.5px solid #ededed;
-    /* padding-top: 8px; */
-    width: 40%;
-    float: left;
-    height: 151px;
-  }
-  .cellphone_img img {
-    /* float: left; */
-    width: 100%;
-    height: 100%;
-  }
-  .cellphone_phone_menu {
-    /* border-left: 0.5px solid #ededed; */
-    padding: 10px 15px;
-    line-height: 1.5;
-    width: 50%;
-    float: left;
-  }
-  .cellphone_phone_news_agency {
-    font-size: 12px;
-  }
-  .cellphone_phone_title {
-    font-weight: bold;
-    font-size: 15px;
-  }
-  .cellphone_phone_sale {
-    font-weight: bold;
-    font-size: 16px;
-    color: #ff2247;
-  }
-  .cellphone_phone_price {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .cellphone_phone_original_price {
-    color: #aeaeae;
-    text-decoration: line-through;
-    font-size: 12px;
-  }
-  .cellphone_phone_contents {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #8e8e8e;
-    font-size: 11px;
-  }
-  .cellphone_phone_monthly_price {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: right;
-  }
 }

@@ -187,6 +187,7 @@ body {
     font-weight: bold;
   }
   .sub_menu_shop {
+    float: left;
     width: 33.1%;
   }
   .sub_menu_phone a:hover {
