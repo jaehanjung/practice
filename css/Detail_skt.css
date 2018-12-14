@@ -94,7 +94,7 @@ body {
     margin: 0 auto;
   }
 
- /* 헤더 메뉴영역 */
+  /* 헤더 메뉴영역 */
   .header a {
     display: inline-block;
   }
@@ -369,7 +369,7 @@ body {
   .tos_menu li:hover {
     border: 1px solid #4444e2;
   }
-  .tos_menu label{
+  .tos_menu label {
     display: block;
     color: #8e8e8e;
   }
@@ -402,7 +402,7 @@ body {
   .installment_menu li:hover {
     border: 1px solid #4444e2;
   }
-  .installment_menu label{
+  .installment_menu label {
     display: block;
     color: #8e8e8e;
   }
@@ -567,5 +567,29 @@ body {
     bottom: 0px;
     padding: 9px 15px;
     font-size: 11px;
+  }
+  .total{
+    position: relative;
+  }
+  .trapezoid {
+       position: absolute;
+    top: -25px;
+    right: 43%;
+    border-bottom: 25px solid #181818;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 25px;
+  }
+  .trapezoid::after{
+      content: "";
+    position: absolute;
+    top: 1px;
+    right: -59%;
+    border-bottom: 25px solid #fff;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 25px;
   }
 }
