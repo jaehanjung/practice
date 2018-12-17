@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>agency_skt</title>
+    <title>Detail_lgu</title>
     <link rel="stylesheet" href="/node_modules/swiper/dist/css/swiper.min.css" />
     <link rel="stylesheet" href="/fontello-6899ec54/css/fontello-embedded.css" />
     <link rel="stylesheet" href="/css/Detail_lgu.css" />
@@ -213,11 +213,48 @@
                     </ul>
                 </div>
             </div>
+            <div class="total">
+                <div class="trapezoid icon-angle-up"></div>
+                <div class="total_more clearfix">
+                    <div class="total_left">
+                        <div class="total_month">
+                            <span class="total_alphabet">A</span>
+                            <p class="total_title">단말기 월 할부금액</p>
+                            <span class="totla_Price">68,034원</span>
+                        </div>
+                        <div class="total_southern">
+                            <span class="total_alphabet">B</span>
+                            <p class="total_title">월 납부 통신금액</p>
+                            <span class="totla_Price">56,134원</span>
+                        </div>
+                    </div>
+                    <div class="total_right">
+                        <div class="total_Payment_amount">
+                            <p>
+                                <span class="total_alphabet">A</span>+<span class="total_alphabet">B</span>
+                            </p>
+                            <p class="total_title">월총 납부금액</p>
+                            <span class="totla_Price2">124,134원</span>
+                        </div>
+                        <div class="total_new_margin">
+                            <p class="total_menu_title">Band데이터6.5G</p>
+                            <p class="total_title">신규 공시 마진</p>
+                            <span class="totla_Price2">220,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="total_btn clearfix">
+                    <button class="total_btn_left">장바구니</button>
+                    <button class="total_btn_right">주문하기</button>
+                </div>
+            </div>
         </main>
     </div>
     <script>
         let MenuList = document.querySelectorAll(".menu_item");
         let SubMenu = document.querySelectorAll(".sub_menu");
+        let TotalMenu = document.querySelector(".total_more");
+        let Trapezoid = document.querySelector(".trapezoid");
         let left_button = document.querySelector(".left-button");
         let box = document.querySelectorAll(".carusel_box");
         let phone_left_button = document.querySelector(".phone_left-button");
@@ -235,6 +272,13 @@
                 }
             });
         }
+        Trapezoid.addEventListener("click", function () {
+            if (TotalMenu.classList.contains("active")) {
+                TotalMenu.classList.remove("active")
+            } else {
+                TotalMenu.classList.add("active");
+            }
+        });
     </script>
     <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
 

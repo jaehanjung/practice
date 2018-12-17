@@ -1,253 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>agency_skt</title>
-    <link rel="stylesheet" href="/node_modules/swiper/dist/css/swiper.min.css" />
-    <link rel="stylesheet" href="/fontello-6899ec54/css/fontello-embedded.css" />
+    <title>Detail_kt</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/swiper/dist/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/fontello-6899ec54/css/fontello-embedded.css"
+    />
     <link rel="stylesheet" href="/css/Detail_kt.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <!-- 헤더영역 공통 -->
-        <header class="header clearfix">
+      <!-- 헤더영역 공통 -->
+      <header class="header clearfix">
         <div class="header_menu">
-            <div class="icon_menu_bar">
-                <a href="#"> <span class="icon-menu"></span> </a>
-            </div>
-            <h1 class="logo"><a href="home.html">Dream Square</a></h1>
-            <div class="icon_more">
-                <a href="#">
-                    <div class="icon-bell-alt icon_btn"></div>
-                </a>
-                <a href="#">
-                    <div class="icon-basket icon_btn"></div>
-                </a>
-                <a href="#">
-                    <div class="icon-user icon_btn"></div>
-                </a>
-            </div>
+          <div class="icon_menu_bar">
+            <a href="#"> <span class="icon-menu"></span> </a>
+          </div>
+          <h1 class="logo"><a href="home.html">Dream Square</a></h1>
+          <div class="icon_more">
+            <a href="#"> <div class="icon-bell-alt icon_btn"></div> </a>
+            <a href="#"> <div class="icon-basket icon_btn"></div> </a>
+            <a href="#"> <div class="icon-user icon_btn"></div> </a>
+          </div>
         </div>
-            <!-- 네비영역 공통 -->
-            <nav class="navigation">
-                <ul class="menu clearfix">
-                    <div class="menu_more">
-                        <li class="menu_list">
-                            <a href="home.html" class="menu_item">HOME</a>
-                            <ul class="sub_menu">
-                                <li class="sub_menu_home"><a href="#">HOME</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu_list">
-                            <a href="Communication.html" class="menu_item">통신</a>
-                            <ul class="sub_menu">
-                                <li class="sub_menu_phone">
-                                    <a href="communication_cellphone.html">휴대폰</a>
-                                    <ul class="sub_menu_agency">
-                                        <li class="sub_menu_phone_agency"><a href="#">skt</a></li>
-                                        <li class="sub_menu_phone_agency"><a href="#">kt</a></li>
-                                        <li class="sub_menu_phone_agency">
-                                            <a href="#">LGU+</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="sub_menu_phone"><a href="#">통신기기</a></li>
-                                <li class="sub_menu_phone"><a href="#">알뜰폰</a></li>
-                                <li class="sub_menu_phone"><a href="#">선불폰</a></li>
-                                <li class="sub_menu_phone"><a href="#">유선</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu_list">
-                            <a href="shopping_Sales_Item.html" class="menu_item">쇼핑</a>
-                            <ul class="sub_menu">
-                                <li class="sub_menu_shop"><a href="shopping_Sales_Item.html">영업상품</a></li>
-                                <li class="sub_menu_shop"><a href="shopping_dream.html">드림상품</a></li>
-                                <li class="sub_menu_shop"><a href="#">복지상품</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu_list">
-                            <a href="#" class="menu_item">마이정산</a>
-                            <ul class="sub_menu">
-                                <li class="sub_menu_calender">
-                                    <select>
-                                        <option value="2018">2018</option>
-                                        <option value="2017">2017</option>
-                                        <option value="2016">2016</option>
-                                        <option value="2015">2015</option>
-                                    </select>
-                                </li>
-                                <li class="sub_menu_calender">
-                                    <select>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                    </select>
-                                </li>
-                                <li class="sub_menu_calender"><a href="#">정산일자</a></li>
-                            </ul>
-                        </li>
-                    </div>
+        <!-- 네비영역 공통 -->
+        <nav class="navigation">
+          <ul class="menu clearfix">
+            <div class="menu_more">
+              <li class="menu_list">
+                <a href="home.html" class="menu_item">HOME</a>
+                <ul class="sub_menu">
+                  <li class="sub_menu_home"><a href="#">HOME</a></li>
                 </ul>
-            </nav>
-        </header>
-        <!-- 메인영역 -->
-        <main class="main">
-            <!-- skt 탭 상품영역 -->
-            <div class="skt_phone_product">
-                <!-- Swiper -->
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="/img/phone.png" alt="" />
-                        </div>
-                        <div class="swiper-slide"><img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-1-300x300.jpg"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.ereyon.com.tr//UserFiles/ProductImages/0/iphonex256gb/orj/apple-iphone-x-256gb-gumus-285190.jpg"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="http://file2.nocutnews.co.kr/newsroom/image/2018/09/20/20180920111737412480_0_710_400.jpg"
-                                alt=""></div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-                <div class="skt_phone_card">
-                    <a href="#">
-                        <div class="skt_phone_menu">
-                            <p class="skt_phone_agency">KT휴대폰</p>
-                            <p class="skt_phone_title">[애플] 아이폰X 256G</p>
-                            <span class="skt_phone_sale">8%</span>
-                            <span class="skt_phone_price">845,000원</span>
-                            <span class="skt_phone_original_price">799,700원</span>
-                        </div>
-                        <div class="skt_phone_menu_icon">
-                            <a href="#"><span class="icon-heart-empty"></span></a>
-                            <a href="#"><span class="icon-share"></span></a>
-                            <a href="#"><span class="icon-phone-1"></span></a>
-                        </div>
-                    </a>
-                </div>
-                <!-- 고객구분 -->
-                <div class="customer_segment clearfix">
-                    <p class="cs_title"><a href="#">고객구분</a></p>
-                    <ul class="cs_menu">
-                        <li><a href="#">개인</a></li>
-                        <li><a href="#">법인</a></li>
-                        <li><a href="#">공공기관</a></li>
-                        <li><a href="#">개인사업자</a></li>
-                        <li><a href="#">기타</a></li>
+              </li>
+              <li class="menu_list">
+                <a href="Communication.html" class="menu_item">통신</a>
+                <ul class="sub_menu">
+                  <li class="sub_menu_phone">
+                    <a href="communication_cellphone.html">휴대폰</a>
+                    <ul class="sub_menu_agency">
+                      <li class="sub_menu_phone_agency"><a href="#">skt</a></li>
+                      <li class="sub_menu_phone_agency"><a href="#">kt</a></li>
+                      <li class="sub_menu_phone_agency">
+                        <a href="#">LGU+</a>
+                      </li>
                     </ul>
-                </div>
-                <!-- 가입유형 -->
-                <div class="type_of_subscription clearfix">
-                    <p class="tos_title"><a href="#">가입 유형</a></p>
-                    <ul class="tos_menu">
-                        <li><a href="#">신규가입</a></li>
-                        <li><a href="#">번호이동</a></li>
-                        <li><a href="#">기기변경</a></li>
-                    </ul>
-                </div>
-                <!-- 일시불 / 할부영역 -->
-                <div class="installment clearfix">
-                    <p class="installment_title"><a href="#">일시불 / 할부</a></p>
-                    <ul class="installment_menu">
-                        <li><a href="#">일시불</a></li>
-                        <li><a href="#">할부</a></li>
-                    </ul>
-                </div>
-                <!-- 할부기간 영역 -->
-                <div class="installment_period clearfix">
-                    <p class="installment_period_title">
-                        <a href="#">일시불 / 할부</a>
-                    </p>
-                    <ul class="installment_period_menu">
-                        <li><a href="#">24개월 할부</a></li>
-                        <li><a href="#">30개월 할부</a></li>
-                        <li><a href="#">36개월 할부</a></li>
-                    </ul>
-                </div>
-                <!-- 할인유형 영역 -->
-                <div class="discount_type clearfix">
-                    <p class="discount_type_title"><a href="#">할인 유형</a></p>
-                    <ul class="discount_type_menu">
-                        <li><a href="#">공시지원금</a></li>
-                        <li><a href="#">선택약정</a></li>
-                    </ul>
-                </div>
-                <!-- 색상선택 영역 -->
-                <div class="select_color clearfix">
-                    <p class="select_color_title"><a href="#">색상 선택</a></p>
-                    <ul class="select_color_menu">
-                        <li><a href="#">스페이스 그레이</a></li>
-                        <li><a href="#">실버</a></li>
-                        <li><a href="#">블랙</a></li>
-                    </ul>
-                </div>
-                <!-- 요금제 선택 영역 -->
-                <div class="select_plan clearfix">
-                    <p class="select_plan_title"><a href="#">요금제 선택</a></p>
-                    <span class="select_plan_other_fares"><a href="#" class="spof_a">다른요금제 선택하기</a></span>
-                    <ul class="select_plan_menu">
-                        <li>
-                            <a href="#">
-                                <p class="select_plan_menu_title">band 데이터6.5G</p>
-                                <p class="select_plan_menu_text">
-                                    데이터 6.5G 음성 집전화/이동전화 무제한 문자 기본제공
-                                </p>
-                                <span class="select_plan_menu_price">월 56,100원</span>
-                                <span class="select_plan_menu_learn_more">자세히보기</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                  </li>
+                  <li class="sub_menu_phone"><a href="#">통신기기</a></li>
+                  <li class="sub_menu_phone"><a href="#">알뜰폰</a></li>
+                  <li class="sub_menu_phone"><a href="#">선불폰</a></li>
+                  <li class="sub_menu_phone"><a href="#">유선</a></li>
+                </ul>
+              </li>
+              <li class="menu_list">
+                <a href="shopping_Sales_Item.html" class="menu_item">쇼핑</a>
+                <ul class="sub_menu">
+                  <li class="sub_menu_shop">
+                    <a href="shopping_Sales_Item.html">영업상품</a>
+                  </li>
+                  <li class="sub_menu_shop">
+                    <a href="shopping_dream.html">드림상품</a>
+                  </li>
+                  <li class="sub_menu_shop"><a href="#">복지상품</a></li>
+                </ul>
+              </li>
+              <li class="menu_list">
+                <a href="#" class="menu_item">마이정산</a>
+                <ul class="sub_menu">
+                  <li class="sub_menu_calender">
+                    <select>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                    </select>
+                  </li>
+                  <li class="sub_menu_calender">
+                    <select>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </li>
+                  <li class="sub_menu_calender"><a href="#">정산일자</a></li>
+                </ul>
+              </li>
             </div>
-        </main>
+          </ul>
+        </nav>
+      </header>
+      <!-- 메인영역 -->
+      <main class="main">
+        <!-- skt 탭 상품영역 -->
+        <div class="skt_phone_product">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/img/phone.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-1-300x300.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="https://www.ereyon.com.tr//UserFiles/ProductImages/0/iphonex256gb/orj/apple-iphone-x-256gb-gumus-285190.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="http://file2.nocutnews.co.kr/newsroom/image/2018/09/20/20180920111737412480_0_710_400.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="skt_phone_card">
+            <a href="#">
+              <div class="skt_phone_menu">
+                <p class="skt_phone_agency">KT휴대폰</p>
+                <p class="skt_phone_title">[애플] 아이폰X 256G</p>
+                <span class="skt_phone_sale">8%</span>
+                <span class="skt_phone_price">845,000원</span>
+                <span class="skt_phone_original_price">799,700원</span>
+              </div>
+              <div class="skt_phone_menu_icon">
+                <a href="#"><span class="icon-heart-empty"></span></a>
+                <a href="#"><span class="icon-share"></span></a>
+                <a href="#"><span class="icon-phone-1"></span></a>
+              </div>
+            </a>
+          </div>
+          <!-- 고객구분 -->
+          <div class="customer_segment clearfix">
+            <p class="cs_title"><a href="#">고객구분</a></p>
+            <ul class="cs_menu">
+              <li><a href="#">개인</a></li>
+              <li><a href="#">법인</a></li>
+              <li><a href="#">공공기관</a></li>
+              <li><a href="#">개인사업자</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+          </div>
+          <!-- 가입유형 -->
+          <div class="type_of_subscription clearfix">
+            <p class="tos_title"><a href="#">가입 유형</a></p>
+            <ul class="tos_menu">
+              <li><a href="#">신규가입</a></li>
+              <li><a href="#">번호이동</a></li>
+              <li><a href="#">기기변경</a></li>
+            </ul>
+          </div>
+          <!-- 일시불 / 할부영역 -->
+          <div class="installment clearfix">
+            <p class="installment_title"><a href="#">일시불 / 할부</a></p>
+            <ul class="installment_menu">
+              <li><a href="#">일시불</a></li>
+              <li><a href="#">할부</a></li>
+            </ul>
+          </div>
+          <!-- 할부기간 영역 -->
+          <div class="installment_period clearfix">
+            <p class="installment_period_title">
+              <a href="#">일시불 / 할부</a>
+            </p>
+            <ul class="installment_period_menu">
+              <li><a href="#">24개월 할부</a></li>
+              <li><a href="#">30개월 할부</a></li>
+              <li><a href="#">36개월 할부</a></li>
+            </ul>
+          </div>
+          <!-- 할인유형 영역 -->
+          <div class="discount_type clearfix">
+            <p class="discount_type_title"><a href="#">할인 유형</a></p>
+            <ul class="discount_type_menu">
+              <li><a href="#">공시지원금</a></li>
+              <li><a href="#">선택약정</a></li>
+            </ul>
+          </div>
+          <!-- 색상선택 영역 -->
+          <div class="select_color clearfix">
+            <p class="select_color_title"><a href="#">색상 선택</a></p>
+            <ul class="select_color_menu">
+              <li><a href="#">스페이스 그레이</a></li>
+              <li><a href="#">실버</a></li>
+              <li><a href="#">블랙</a></li>
+            </ul>
+          </div>
+          <!-- 요금제 선택 영역 -->
+          <div class="select_plan clearfix">
+            <p class="select_plan_title"><a href="#">요금제 선택</a></p>
+            <span class="select_plan_other_fares"
+              ><a href="#" class="spof_a">다른요금제 선택하기</a></span
+            >
+            <ul class="select_plan_menu">
+              <li>
+                <a href="#">
+                  <p class="select_plan_menu_title">band 데이터6.5G</p>
+                  <p class="select_plan_menu_text">
+                    데이터 6.5G 음성 집전화/이동전화 무제한 문자 기본제공
+                  </p>
+                  <span class="select_plan_menu_price">월 56,100원</span>
+                  <span class="select_plan_menu_learn_more">자세히보기</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="total">
+          <div class="trapezoid icon-angle-up"></div>
+          <div class="total_more clearfix">
+            <div class="total_left">
+              <div class="total_month">
+                <span class="total_alphabet">A</span>
+                <p class="total_title">단말기 월 할부금액</p>
+                <span class="totla_Price">68,034원</span>
+              </div>
+              <div class="total_southern">
+                <span class="total_alphabet">B</span>
+                <p class="total_title">월 납부 통신금액</p>
+                <span class="totla_Price">56,134원</span>
+              </div>
+            </div>
+            <div class="total_right">
+              <div class="total_Payment_amount">
+                <p>
+                  <span class="total_alphabet">A</span>+<span
+                    class="total_alphabet"
+                    >B</span
+                  >
+                </p>
+                <p class="total_title">월총 납부금액</p>
+                <span class="totla_Price2">124,134원</span>
+              </div>
+              <div class="total_new_margin">
+                <p class="total_menu_title">Band데이터6.5G</p>
+                <p class="total_title">신규 공시 마진</p>
+                <span class="totla_Price2">220,000원</span>
+              </div>
+            </div>
+          </div>
+          <div class="total_btn clearfix">
+            <button class="total_btn_left">장바구니</button>
+            <button class="total_btn_right">주문하기</button>
+          </div>
+        </div>
+      </main>
     </div>
     <script>
-        let MenuList = document.querySelectorAll(".menu_item");
-        let SubMenu = document.querySelectorAll(".sub_menu");
-        let left_button = document.querySelector(".left-button");
-        let box = document.querySelectorAll(".carusel_box");
-        let phone_left_button = document.querySelector(".phone_left-button");
-        let phone_box = document.querySelectorAll(".phone_carusel_box");
-        console.log(MenuList);
-        for (let i = 0; i < MenuList.length; i++) {
-            MenuList[i].addEventListener("click", function () {
-                if (SubMenu[i].classList.contains("active")) {
-                    SubMenu[i].classList.remove("active");
-                } else {
-                    for (let j = 0; j < SubMenu.length; j++) {
-                        SubMenu[j].classList.remove("active");
-                    }
-                    SubMenu[i].classList.add("active");
-                }
-            });
+      let MenuList = document.querySelectorAll(".menu_item");
+      let SubMenu = document.querySelectorAll(".sub_menu");
+      let TotalMenu = document.querySelector(".total_more");
+      let Trapezoid = document.querySelector(".trapezoid");
+      let left_button = document.querySelector(".left-button");
+      let box = document.querySelectorAll(".carusel_box");
+      let phone_left_button = document.querySelector(".phone_left-button");
+      let phone_box = document.querySelectorAll(".phone_carusel_box");
+      console.log(MenuList);
+      for (let i = 0; i < MenuList.length; i++) {
+        MenuList[i].addEventListener("click", function() {
+          if (SubMenu[i].classList.contains("active")) {
+            SubMenu[i].classList.remove("active");
+          } else {
+            for (let j = 0; j < SubMenu.length; j++) {
+              SubMenu[j].classList.remove("active");
+            }
+            SubMenu[i].classList.add("active");
+          }
+        });
+      }
+      Trapezoid.addEventListener("click", function() {
+        if (TotalMenu.classList.contains("active")) {
+          TotalMenu.classList.remove("active");
+        } else {
+          TotalMenu.classList.add("active");
         }
+      });
     </script>
     <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".swiper-container", {
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            }
-        });
+      var swiper = new Swiper(".swiper-container", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
     </script>
-</body>
-
+  </body>
 </html>

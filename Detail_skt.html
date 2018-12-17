@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>agency_skt</title>
+    <title>Detail_skt</title>
     <link
       rel="stylesheet"
       href="/node_modules/swiper/dist/css/swiper.min.css"
@@ -20,23 +20,17 @@
     <div class="container">
       <!-- 헤더영역 공통 -->
       <header class="header clearfix">
-      <div class="header_menu">
-        <div class="icon_menu_bar">
-          <a href="#"> <span class="icon-menu"></span> </a>
+        <div class="header_menu">
+          <div class="icon_menu_bar">
+            <a href="#"> <span class="icon-menu"></span> </a>
+          </div>
+          <h1 class="logo"><a href="home.html">Dream Square</a></h1>
+          <div class="icon_more">
+            <a href="#"> <div class="icon-bell-alt icon_btn"></div> </a>
+            <a href="#"> <div class="icon-basket icon_btn"></div> </a>
+            <a href="#"> <div class="icon-user icon_btn"></div> </a>
+          </div>
         </div>
-        <h1 class="logo"><a href="home.html">Dream Square</a></h1>
-        <div class="icon_more">
-          <a href="#">
-            <div class="icon-bell-alt icon_btn"></div>
-          </a>
-          <a href="#">
-            <div class="icon-basket icon_btn"></div>
-          </a>
-          <a href="#">
-            <div class="icon-user icon_btn"></div>
-          </a>
-        </div>
-      </div>
         <!-- 네비영역 공통 -->
         <nav class="navigation">
           <ul class="menu clearfix">
@@ -258,46 +252,46 @@
                 <label for="installment_menu_Lump_sum">일시불</label>
               </li>
               <li>
-                <input type="radio" name="installments" id="installment_menu_Installment" class="chk_type_radio" />
+                <input
+                  type="radio"
+                  name="installments"
+                  id="installment_menu_Installment"
+                  class="chk_type_radio"
+                />
                 <label for="installment_menu_Installment">할부</label>
               </li>
             </ul>
           </div>
           <!-- 할부기간 영역 -->
           <div class="installment_period clearfix">
-            <p class="installment_period_title">
-              할부 기간
-            </p>
+            <p class="installment_period_title">할부 기간</p>
             <ul class="installment_period_menu">
               <li>
-              <input
+                <input
                   type="radio"
                   name="installment_periods"
                   id="installment_period_menu24"
                   class="chk_type_radio"
                 />
                 <label for="installment_period_menu24">24개월 할부</label>
-                
               </li>
               <li>
-              <input
+                <input
                   type="radio"
                   name="installment_periods"
                   id="installment_period_menu30"
                   class="chk_type_radio"
                 />
                 <label for="installment_period_menu30">30개월 할부</label>
-               
               </li>
               <li>
-              <input
+                <input
                   type="radio"
                   name="installment_periods"
                   id="installment_period_menu36"
                   class="chk_type_radio"
                 />
                 <label for="installment_period_menu36">36개월 할부</label>
-                
               </li>
             </ul>
           </div>
@@ -306,14 +300,22 @@
             <p class="discount_type_title">할인 유형</p>
             <ul class="discount_type_menu">
               <li>
-                  <input type="radio" name="discount_types" id="discount_type_menu" class="chk_type_radio" />
-                  <label for="discount_type_menu_grants">공시지원금</label>
-                
+                <input
+                  type="radio"
+                  name="discount_types"
+                  id="discount_type_menu"
+                  class="chk_type_radio"
+                />
+                <label for="discount_type_menu_grants">공시지원금</label>
               </li>
               <li>
-                <input type="radio" name="discount_types" id="discount_type_menu" class="chk_type_radio" />
+                <input
+                  type="radio"
+                  name="discount_types"
+                  id="discount_type_menu"
+                  class="chk_type_radio"
+                />
                 <label for="discount_type_menu_Choices">선택약정</label>
-                
               </li>
             </ul>
           </div>
@@ -322,14 +324,32 @@
             <p class="select_color_title">색상 선택</p>
             <ul class="select_color_menu">
               <li>
-              <input type="radio" name="select_colors" id="select_color_menu_Gray" class="chk_type_radio" />
-              <label for="select_color_menu_Gray">스페이스 그레이</label>
-                
+                <input
+                  type="radio"
+                  name="select_colors"
+                  id="select_color_menu_Gray"
+                  class="chk_type_radio"
+                />
+                <label for="select_color_menu_Gray">스페이스 그레이</label>
               </li>
-              <li><input type="radio" name="select_colors" id="select_color_menu_silver" class="chk_type_radio" />
-              <label for="select_color_menu_silver">실버</label></li>
-              <li><input type="radio" name="select_colors" id="select_color_menu_black" class="chk_type_radio" />
-              <label for="select_color_menu_black">블랙</label></li>
+              <li>
+                <input
+                  type="radio"
+                  name="select_colors"
+                  id="select_color_menu_silver"
+                  class="chk_type_radio"
+                />
+                <label for="select_color_menu_silver">실버</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="select_colors"
+                  id="select_color_menu_black"
+                  class="chk_type_radio"
+                />
+                <label for="select_color_menu_black">블랙</label>
+              </li>
             </ul>
           </div>
           <!-- 요금제 선택 영역 -->
@@ -353,15 +373,50 @@
           </div>
         </div>
         <div class="total">
-            <div class="trapezoid">
+          <div class="trapezoid icon-angle-up"></div>
+          <div class="total_more clearfix">
+            <div class="total_left">
+              <div class="total_month">
+                <span class="total_alphabet">A</span>
+                <p class="total_title">단말기 월 할부금액</p>
+                <span class="totla_Price">68,034원</span>
+              </div>
+              <div class="total_southern">
+                <span class="total_alphabet">B</span>
+                <p class="total_title">월 납부 통신금액</p>
+                <span class="totla_Price">56,134원</span>
+              </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam labore voluptas veritatis dolor nam, porro distinctio molestias pariatur quo nemo laborum nulla esse veniam. Dolor, tempore? Ea beatae ratione voluptas.</p>
+            <div class="total_right">
+              <div class="total_Payment_amount">
+                <p>
+                  <span class="total_alphabet">A</span>+<span
+                    class="total_alphabet"
+                    >B</span
+                  >
+                </p>
+                <p class="total_title">월총 납부금액</p>
+                <span class="totla_Price2">124,134원</span>
+              </div>
+              <div class="total_new_margin">
+                <p class="total_menu_title">Band데이터6.5G</p>
+                <p class="total_title">신규 공시 마진</p>
+                <span class="totla_Price2">220,000원</span>
+              </div>
+            </div>
+          </div>
+          <div class="total_btn clearfix">
+            <button class="total_btn_left">장바구니</button>
+            <button class="total_btn_right">주문하기</button>
+          </div>
         </div>
       </main>
     </div>
     <script>
       let MenuList = document.querySelectorAll(".menu_item");
       let SubMenu = document.querySelectorAll(".sub_menu");
+      let TotalMenu = document.querySelector(".total_more");
+      let Trapezoid = document.querySelector(".trapezoid");
       let left_button = document.querySelector(".left-button");
       let box = document.querySelectorAll(".carusel_box");
       let phone_left_button = document.querySelector(".phone_left-button");
@@ -379,6 +434,13 @@
           }
         });
       }
+      Trapezoid.addEventListener("click", function() {
+        if (TotalMenu.classList.contains("active")) {
+            TotalMenu.classList.remove("active")
+        } else{
+          TotalMenu.classList.add("active");
+        }
+      });
     </script>
     <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
 

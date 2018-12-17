@@ -563,4 +563,130 @@ body {
     padding: 9px 15px;
     font-size: 11px;
   }
+   /* 합계 영역 */
+  .total {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .icon-angle-up:before {
+    /* top: 50px; */
+    content: "\f106";
+    position: absolute;
+    /* top: 101%; */
+    z-index: 100;
+    left: 10%;
+  }
+  .trapezoid {
+    position: absolute;
+    top: -25px;
+    right: 43%;
+    border-bottom: 25px solid #181818;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 25px;
+  }
+
+  .trapezoid::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: -59%;
+    border-bottom: 25px solid #fff;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 25px;
+  }
+
+  .total_more {
+    display: none;
+  }
+  .active.total_more{
+  
+    display: block;
+  }
+  .total_left {
+    margin-top: 5px;
+    width: 48%;
+    float: left;
+
+    margin-left: 1%;
+  }
+  .total_month {
+    width: 50%;
+    float: left;
+  }
+  .total_southern {
+    width: 50%;
+    float: left;
+  }
+  .total_right {
+    border-left: 0.5px solid #8e8e8e;
+    margin-top: 5px;
+    width: 48%;
+    margin-right: 2%;
+    float: right;
+  }
+  .total_Payment_amount {
+    width: 50%;
+    float: left;
+  }
+  .total_new_margin {
+    margin-top: 4px;
+    line-height: 1.5;
+    width: 50%;
+    float: left;
+  }
+  .total_menu_title {
+    color: #4444e2;
+    font-size: 10px;
+  }
+  .total_alphabet {
+    background-color: #4444e2;
+    color: #fff;
+    font-size: 10px;
+    display: inline-block;
+    border: 1px solid;
+    width: 14px;
+    height: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    border-radius: 50%;
+  }
+  .total_title {
+    font-size: 10px;
+  }
+  .totla_Price {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .totla_Price2 {
+    font-weight: bold;
+    font-size: 13px;
+    color: #ff2247;
+  }
+  .total_btn {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .total_btn_left {
+    background-color: #4444e2;
+    color: #fff;
+    width: 45%;
+    float: left;
+    border: 0;
+    margin-left: 5px;
+    padding: 5px 5px;
+  }
+  .total_btn_right {
+    background-color: #4444e2;
+    color: #fff;
+    width: 45%;
+    float: right;
+    border: 0;
+    margin-right: 5px;
+    padding: 5px 5px;
+  }
 }
