@@ -318,7 +318,7 @@ body {
     font-size: 14px;
   }
   .cs_menu {
-    padding: 10px 10px;
+    width: 100%;
   }
   .chk_type_radio {
     display: none;
@@ -326,23 +326,36 @@ body {
 
   .cs_menu li {
     margin-left: 5px;
-    border: 0.5px solid #8e8e8e;
-    padding: 10px 0px;
     width: 18%;
     float: left;
     font-size: 10px;
     text-align: center;
   }
-  .cs_menu li:hover {
-    border: 1px solid #4444e2;
+
+  .cs_menu li label {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #8e8e8e;
+    box-sizing: border-box;
+    width: 100%;
   }
-  .cs_menu label {
-    display: block;
-    color: #8e8e8e;
+  .cs_menu li label.cs_menu_nopad {
+    padding: 10px 0px;
   }
-  .cs_menu label:hover {
+
+  .cs_menu li input[type="radio"]:checked + label {
     color: #4444e2;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #4444e2;
+    padding: 10px 10px;
   }
+  .cs_menu li input[type="radio"]:checked + label.cs_menu_nopad {
+    padding: 10px 0px;
+  }
+
   /* 가입유형 영역 */
   .type_of_subscription {
     width: 100%;
@@ -359,23 +372,29 @@ body {
   }
   .tos_menu li {
     margin-left: 5px;
-    border: 0.5px solid #8e8e8e;
-    padding: 10px 0px;
     width: 31%;
     float: left;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
   }
-  .tos_menu li:hover {
-    border: 1px solid #4444e2;
+  .tos_menu li label {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #8e8e8e;
+    box-sizing: border-box;
+    width: 100%;
   }
-  .tos_menu label {
-    display: block;
-    color: #8e8e8e;
-  }
-  .tos_menu label:hover {
+
+  .tos_menu li input[type="radio"]:checked + label {
     color: #4444e2;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #4444e2;
+    padding: 10px 10px;
   }
+
   /* 일시불 할부영역 영역 */
   .installment {
     width: 100%;
@@ -392,23 +411,30 @@ body {
   }
   .installment_menu li {
     margin-left: 5px;
-    border: 0.5px solid #8e8e8e;
-    padding: 10px 0px;
     width: 31%;
     float: left;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
   }
-  .installment_menu li:hover {
-    border: 1px solid #4444e2;
+
+  .installment_menu li label {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #8e8e8e;
+    box-sizing: border-box;
+    width: 100%;
   }
-  .installment_menu label {
-    display: block;
-    color: #8e8e8e;
-  }
-  .installment_menu label:hover {
+
+  .installment_menu li input[type="radio"]:checked + label {
     color: #4444e2;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #4444e2;
+    padding: 10px 10px;
   }
+
   /* 할부 기간 영역 */
   .installment_period {
     width: 100%;
@@ -425,23 +451,30 @@ body {
   }
   .installment_period_menu li {
     margin-left: 5px;
-    border: 0.5px solid #8e8e8e;
-    padding: 10px 0px;
     width: 31%;
     float: left;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
   }
-  .installment_period_menu li:hover {
-    border: 1px solid #4444e2;
+
+  .installment_period_menu li label {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #8e8e8e;
+    box-sizing: border-box;
+    width: 100%;
   }
-  .installment_period_menu label {
-    display: block;
-    color: #8e8e8e;
-  }
-  .installment_period_menu label:hover {
+
+  .installment_period_menu li input[type="radio"]:checked + label {
     color: #4444e2;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #4444e2;
+    padding: 10px 10px;
   }
+
   /* 할인유형 영역 */
   .discount_type {
     width: 100%;
@@ -458,23 +491,30 @@ body {
   }
   .discount_type_menu li {
     margin-left: 5px;
-    border: 0.5px solid #8e8e8e;
-    padding: 10px 0px;
     width: 31%;
     float: left;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
   }
-  .discount_type_menu li:hover {
-    border: 1px solid #4444e2;
+
+  .discount_type_menu li label {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #8e8e8e;
+    box-sizing: border-box;
+    width: 100%;
   }
-  .discount_type_menu label {
-    display: block;
-    color: #8e8e8e;
-  }
-  .discount_type_menu label:hover {
+
+  .discount_type_menu li input[type="radio"]:checked + label {
     color: #4444e2;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #4444e2;
+    padding: 10px 10px;
   }
+
   /* 색상선택 영역 */
   .select_color {
     width: 100%;
@@ -491,23 +531,30 @@ body {
   }
   .select_color_menu li {
     margin-left: 5px;
-    border: 0.5px solid #8e8e8e;
-    padding: 10px 0px;
     width: 31%;
     float: left;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
   }
-  .select_color_menu li:hover {
-    border: 1px solid #4444e2;
+
+  .select_color_menu li label {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid #8e8e8e;
+    box-sizing: border-box;
+    width: 100%;
   }
-  .select_color_menu label {
-    display: block;
-    color: #8e8e8e;
-  }
-  .select_color_menu label:hover {
+
+  .select_color_menu li input[type="radio"]:checked + label {
     color: #4444e2;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #4444e2;
+    padding: 10px 10px;
   }
+
   /* 요금제 선택 영역 */
   .select_plan {
     position: relative;
@@ -608,7 +655,7 @@ body {
   .total_more {
     display: none;
   }
-  .active.total_more{
+  .active.total_more {
     display: block;
   }
   .total_left {

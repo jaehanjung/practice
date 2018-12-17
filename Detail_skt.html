@@ -189,10 +189,12 @@
                 <input
                   type="radio"
                   name="Customer_segments"
-                  id="cs_menu_Individual"
+                  id="cs_menu_buisnessman"
                   class="chk_type_radio"
                 />
-                <label for="cs_menu_Individual">개인사업자</label>
+                <label class="cs_menu_nopad" for="cs_menu_buisnessman"
+                  >개인사업자</label
+                >
               </li>
               <li>
                 <input
@@ -201,7 +203,7 @@
                   id="cs_menu_etc"
                   class="chk_type_radio"
                 />
-                <label for="cs_menu_etc">개인사업자</label>
+                <label for="cs_menu_etc">기타</label>
               </li>
             </ul>
           </div>
@@ -303,7 +305,7 @@
                 <input
                   type="radio"
                   name="discount_types"
-                  id="discount_type_menu"
+                  id="discount_type_menu_grants"
                   class="chk_type_radio"
                 />
                 <label for="discount_type_menu_grants">공시지원금</label>
@@ -312,7 +314,7 @@
                 <input
                   type="radio"
                   name="discount_types"
-                  id="discount_type_menu"
+                  id="discount_type_menu_Choices"
                   class="chk_type_radio"
                 />
                 <label for="discount_type_menu_Choices">선택약정</label>
@@ -436,8 +438,8 @@
       }
       Trapezoid.addEventListener("click", function() {
         if (TotalMenu.classList.contains("active")) {
-            TotalMenu.classList.remove("active")
-        } else{
+          TotalMenu.classList.remove("active");
+        } else {
           TotalMenu.classList.add("active");
         }
       });
