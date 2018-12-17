@@ -563,7 +563,7 @@ body {
     padding: 9px 15px;
     font-size: 11px;
   }
-   /* 합계 영역 */
+  /* 합계 영역 */
   .total {
     position: relative;
     width: 100%;
@@ -603,8 +603,7 @@ body {
   .total_more {
     display: none;
   }
-  .active.total_more{
-  
+  .active.total_more {
     display: block;
   }
   .total_left {
@@ -669,6 +668,7 @@ body {
   }
   .total_btn {
     padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
   }
   .total_btn_left {

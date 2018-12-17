@@ -674,6 +674,7 @@ body {
   }
   .total_btn {
     padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
   }
   .total_btn_left {
