@@ -21,21 +21,15 @@
       <!-- 헤더영역 공통 -->
       <header class="header clearfix content">
         <div class="header_menu">
-            <div class="icon_menu_bar">
-                <a href="#"> <span class="icon-menu"></span> </a>
-            </div>
-            <h1 class="logo"><a href="home.html">Dream Square</a></h1>
-            <div class="icon_more">
-                <a href="#">
-                    <div class="icon-bell-alt icon_btn"></div>
-                </a>
-                <a href="#">
-                    <div class="icon-basket icon_btn"></div>
-                </a>
-                <a href="#">
-                    <div class="icon-user icon_btn"></div>
-                </a>
-            </div>
+          <div class="icon_menu_bar">
+            <a href="#"> <span class="icon-menu"></span> </a>
+          </div>
+          <h1 class="logo"><a href="home.html">Dream Square</a></h1>
+          <div class="icon_more">
+            <a href="#"> <div class="icon-bell-alt icon_btn"></div> </a>
+            <a href="#"> <div class="icon-basket icon_btn"></div> </a>
+            <a href="#"> <div class="icon-user icon_btn"></div> </a>
+          </div>
         </div>
         <!-- 네비영역 공통 -->
         <nav class="navigation">
@@ -110,16 +104,77 @@
       </header>
       <!-- 메인영역 -->
       <main class="main">
-        <div class="calculate_menu">
-            <ul class="calculate_meneu_type">
-                <li>정산</li>
-            </ul>
+        <div class="calculate_menu clearfix">
+          <div class="calculate_menu_more clearfix">
+            <div class="calculate_type calculate">
+              <span class="calulate_title">유형</span>
+              <span class="caluate_price">정산</span>
+            </div>
+            <div class="calculate_phone calculate">
+              <p class="calulate_title Check_history">
+                휴대폰 내역확인<span class="icon-angle-down"></span>
+              </p>
+              <span class="caluate_price">600,000</span>
+            </div>
+
+            <div class="calculate_Check_history calculate">
+              <p class="cch_Opening_date">
+                휴대폰 개통일자<span class="cch_date">2018-10-13</span>
+              </p>
+              <p class="cch_customer">
+                개통고객<span class="cch_name">정형석</span>
+              </p>
+              <div class="cch_menu clearfix">
+                <div class="cch_img">
+                  <img src="/img/calculate_phone.png" alt="" />
+                </div>
+                <div class="cch_title">
+                  <p class="cch_title_agency">SKT휴대폰</p>
+                  <p class="cch_title_phone">[애플]아이폰 X 256G</p>
+                  <p class="cch_type">가입유형<span>휴대폰</span></p>
+                </div>
+                <div class="cch_price">
+                  <p class="cch_price_name">정산<span>220,000원</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="calculate_incentive calculate">
+              <span class="calulate_title">휴대폰 인센티브</span>
+              <span class="caluate_price">5,000</span>
+            </div>
+            <div class="calculate_cable calculate">
+              <span class="calulate_title">유선</span>
+              <span class="caluate_price">-</span>
+            </div>
+            <div class="calculate_Sales_item calculate">
+              <span class="calulate_title">영업상품</span>
+              <span class="caluate_price">-</span>
+            </div>
+            <div class="calculate_Sales_incentives calculate">
+              <span class="calulate_title">영업상품 인센티브</span>
+              <span class="caluate_price">-</span>
+            </div>
+            <div class="calculate_Referral_allowance calculate">
+              <span class="calulate_title">추천수당</span>
+              <span class="caluate_price">-</span>
+            </div>
+            <div class="calculate_Referral_allowance_incentive calculate">
+              <span class="calulate_title">추천수당 인센티브</span>
+              <span class="caluate_price">-</span>
+            </div>
+            <div class="calulate_tax calculate">
+              <span class="calulate_title">세금</span>
+              <span class="caluate_price">-54,087</span>
+            </div>
+          </div>
         </div>
       </main>
     </div>
     <script>
       let MenuList = document.querySelectorAll(".menu_item");
       let SubMenu = document.querySelectorAll(".sub_menu");
+      let Check = document.querySelector(".Check_history");
+      let CheckHistory = document.querySelector(".calculate_Check_history");
       let left_button = document.querySelector(".left-button");
       let box = document.querySelectorAll(".carusel_box");
       let phone_left_button = document.querySelector(".phone_left-button");
@@ -137,6 +192,13 @@
           }
         });
       }
+      Check.addEventListener("click", function() {
+        if (CheckHistory.classList.contains("active")) {
+          CheckHistory.classList.remove("active");
+        } else {
+          CheckHistory.classList.add("active");
+        }
+      });
     </script>
     <!-- Swiper JS -->
     <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
