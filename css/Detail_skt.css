@@ -544,7 +544,9 @@ body {
     box-sizing: border-box;
     width: 100%;
   }
-
+   .select_color_menu li label.cs_menu_nopad {
+    padding: 10px 0px;
+  }
   .select_color_menu li input[type="radio"]:checked + label {
     color: #4444e2;
     box-sizing: border-box;

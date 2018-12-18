@@ -8,30 +8,30 @@
     <title>Detail_lgu</title>
     <link rel="stylesheet" href="/node_modules/swiper/dist/css/swiper.min.css" />
     <link rel="stylesheet" href="/fontello-6899ec54/css/fontello-embedded.css" />
-    <link rel="stylesheet" href="/css/Detail_lgu.css" />
+    <link rel="stylesheet" href="/css/Detail_skt.css" />
 </head>
 
 <body>
     <div class="container">
         <!-- 헤더영역 공통 -->
         <header class="header clearfix">
-        <div class="header_menu">
-            <div class="icon_menu_bar">
-                <a href="#"> <span class="icon-menu"></span> </a>
+            <div class="header_menu">
+                <div class="icon_menu_bar">
+                    <a href="#"> <span class="icon-menu"></span> </a>
+                </div>
+                <h1 class="logo"><a href="home.html">Dream Square</a></h1>
+                <div class="icon_more">
+                    <a href="#">
+                        <div class="icon-bell-alt icon_btn"></div>
+                    </a>
+                    <a href="#">
+                        <div class="icon-basket icon_btn"></div>
+                    </a>
+                    <a href="#">
+                        <div class="icon-user icon_btn"></div>
+                    </a>
+                </div>
             </div>
-            <h1 class="logo"><a href="home.html">Dream Square</a></h1>
-            <div class="icon_more">
-                <a href="#">
-                    <div class="icon-bell-alt icon_btn"></div>
-                </a>
-                <a href="#">
-                    <div class="icon-basket icon_btn"></div>
-                </a>
-                <a href="#">
-                    <div class="icon-user icon_btn"></div>
-                </a>
-            </div>
-        </div>
             <!-- 네비영역 공통 -->
             <nav class="navigation">
                 <ul class="menu clearfix">
@@ -64,8 +64,12 @@
                         <li class="menu_list">
                             <a href="shopping_Sales_Item.html" class="menu_item">쇼핑</a>
                             <ul class="sub_menu">
-                                <li class="sub_menu_shop"><a href="shopping_Sales_Item.html">영업상품</a></li>
-                                <li class="sub_menu_shop"><a href="shopping_dream.html">드림상품</a></li>
+                                <li class="sub_menu_shop">
+                                    <a href="shopping_Sales_Item.html">영업상품</a>
+                                </li>
+                                <li class="sub_menu_shop">
+                                    <a href="shopping_dream.html">드림상품</a>
+                                </li>
                                 <li class="sub_menu_shop"><a href="#">복지상품</a></li>
                             </ul>
                         </li>
@@ -113,12 +117,17 @@
                         <div class="swiper-slide">
                             <img src="/img/phone.png" alt="" />
                         </div>
-                        <div class="swiper-slide"><img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-1-300x300.jpg"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="https://www.ereyon.com.tr//UserFiles/ProductImages/0/iphonex256gb/orj/apple-iphone-x-256gb-gumus-285190.jpg"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="http://file2.nocutnews.co.kr/newsroom/image/2018/09/20/20180920111737412480_0_710_400.jpg"
-                                alt=""></div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-1-300x300.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.ereyon.com.tr//UserFiles/ProductImages/0/iphonex256gb/orj/apple-iphone-x-256gb-gumus-285190.jpg"
+                                alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="http://file2.nocutnews.co.kr/newsroom/image/2018/09/20/20180920111737412480_0_710_400.jpg"
+                                alt="" />
+                        </div>
                     </div>
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
@@ -141,58 +150,110 @@
                 </div>
                 <!-- 고객구분 -->
                 <div class="customer_segment clearfix">
-                    <p class="cs_title"><a href="#">고객구분</a></p>
+                    <p class="cs_title">고객 구분</p>
                     <ul class="cs_menu">
-                        <li><a href="#">개인</a></li>
-                        <li><a href="#">법인</a></li>
-                        <li><a href="#">공공기관</a></li>
-                        <li><a href="#">개인사업자</a></li>
-                        <li><a href="#">기타</a></li>
+                        <li>
+                            <input type="radio" name="Customer_segments" id="cs_menu_individual" class="chk_type_radio" />
+                            <label for="cs_menu_individual">개인</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Customer_segments" id="cs_menu_Corporation" class="chk_type_radio" />
+                            <label for="cs_menu_Corporation">법인</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Customer_segments" id="cs_menu_Public" class="chk_type_radio" />
+                            <label class="cs_menu_nopad" for="cs_menu_Public">공공기관</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Customer_segments" id="cs_menu_buisnessman" class="chk_type_radio" />
+                            <label class="cs_menu_nopad" for="cs_menu_buisnessman">개인사업자</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Customer_segments" id="cs_menu_etc" class="chk_type_radio" />
+                            <label for="cs_menu_etc">기타</label>
+                        </li>
                     </ul>
                 </div>
                 <!-- 가입유형 -->
                 <div class="type_of_subscription clearfix">
-                    <p class="tos_title"><a href="#">가입 유형</a></p>
+                    <p class="tos_title">가입 유형</p>
                     <ul class="tos_menu">
-                        <li><a href="#">신규가입</a></li>
-                        <li><a href="#">번호이동</a></li>
-                        <li><a href="#">기기변경</a></li>
+                        <li>
+                            <input type="radio" name="Type_of_subscriptions" id="tos_menu_New_signup" class="chk_type_radio" />
+                            <label for="tos_menu_New_signup">신규가입</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Type_of_subscriptions" id="tos_menu_Numbering" class="chk_type_radio" />
+                            <label for="tos_menu_Numbering">번호이동</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Type_of_subscriptions" id="tos_menu_Change_device" class="chk_type_radio" />
+                            <label for="tos_menu_Change_device">기기변경</label>
+                        </li>
                     </ul>
                 </div>
                 <!-- 일시불 / 할부영역 -->
                 <div class="installment clearfix">
-                    <p class="installment_title"><a href="#">일시불 / 할부</a></p>
+                    <p class="installment_title">일시불 / 할부</p>
                     <ul class="installment_menu">
-                        <li><a href="#">일시불</a></li>
-                        <li><a href="#">할부</a></li>
+                        <li>
+                            <input type="radio" name="installments" id="installment_menu_Lump_sum" class="chk_type_radio" />
+                            <label for="installment_menu_Lump_sum">일시불</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="installments" id="installment_menu_Installment" class="chk_type_radio" />
+                            <label for="installment_menu_Installment">할부</label>
+                        </li>
                     </ul>
                 </div>
                 <!-- 할부기간 영역 -->
                 <div class="installment_period clearfix">
-                    <p class="installment_period_title">
-                        <a href="#">일시불 / 할부</a>
-                    </p>
+                    <p class="installment_period_title">할부 기간</p>
                     <ul class="installment_period_menu">
-                        <li><a href="#">24개월 할부</a></li>
-                        <li><a href="#">30개월 할부</a></li>
-                        <li><a href="#">36개월 할부</a></li>
+                        <li>
+                            <input type="radio" name="installment_periods" id="installment_period_menu24" class="chk_type_radio" />
+                            <label for="installment_period_menu24">24개월 할부</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="installment_periods" id="installment_period_menu30" class="chk_type_radio" />
+                            <label for="installment_period_menu30">30개월 할부</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="installment_periods" id="installment_period_menu36" class="chk_type_radio" />
+                            <label for="installment_period_menu36">36개월 할부</label>
+                        </li>
                     </ul>
                 </div>
                 <!-- 할인유형 영역 -->
                 <div class="discount_type clearfix">
-                    <p class="discount_type_title"><a href="#">할인 유형</a></p>
+                    <p class="discount_type_title">할인 유형</p>
                     <ul class="discount_type_menu">
-                        <li><a href="#">공시지원금</a></li>
-                        <li><a href="#">선택약정</a></li>
+                        <li>
+                            <input type="radio" name="discount_types" id="discount_type_menu_grants" class="chk_type_radio" />
+                            <label for="discount_type_menu_grants">공시지원금</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="discount_types" id="discount_type_menu_Choices" class="chk_type_radio" />
+                            <label for="discount_type_menu_Choices">선택약정</label>
+                        </li>
                     </ul>
                 </div>
                 <!-- 색상선택 영역 -->
                 <div class="select_color clearfix">
-                    <p class="select_color_title"><a href="#">색상 선택</a></p>
+                    <p class="select_color_title">색상 선택</p>
                     <ul class="select_color_menu">
-                        <li><a href="#">스페이스 그레이</a></li>
-                        <li><a href="#">실버</a></li>
-                        <li><a href="#">블랙</a></li>
+                        <li>
+                            <input type="radio" name="select_colors" id="select_color_menu_Gray" class="chk_type_radio" />
+                            <label class="cs_menu_nopad" for="select_color_menu_Gray">스페이스 그레이</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="select_colors" id="select_color_menu_silver" class="chk_type_radio" />
+                            <label for="select_color_menu_silver">실버</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="select_colors" id="select_color_menu_black" class="chk_type_radio" />
+                            <label for="select_color_menu_black">블랙</label>
+                        </li>
                     </ul>
                 </div>
                 <!-- 요금제 선택 영역 -->
@@ -274,7 +335,7 @@
         }
         Trapezoid.addEventListener("click", function () {
             if (TotalMenu.classList.contains("active")) {
-                TotalMenu.classList.remove("active")
+                TotalMenu.classList.remove("active");
             } else {
                 TotalMenu.classList.add("active");
             }
