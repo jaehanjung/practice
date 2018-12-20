@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+    text-decoration: none;
+}
+
+span,
+p,
+li,
+a {
+    color: #111111;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 768px) {
+    .container {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* 헤더영역 */
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: #4444e2;
+    }
+
+    .home_img {
+        width: 15%;
+        float: left;
+        height: 100%;
+        padding-top: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .home_img img {
+        width: 25px;
+    }
+
+    .logo {
+        float: left;
+        text-align: center;
+        width: 85%;
+        color: #fff;
+        font-size: 19px;
+        height: 100%;
+        box-sizing: border-box;
+        /* padding-top: 12px; */
+        padding: 12px 35px 0 0;
+        /* padding-left: 17px; */
+    }
+
+
+
+    /* 메인 영역 */
+    .main {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .menu_bar {
+        margin-top: 25px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .menu_bar_best100 {
+        box-sizing: border-box;
+        border: 0.5px solid #cccccc;
+        float: left;
+        width: 50%;
+        background-color: #f4f4f4;
+
+    }
+
+    .menu_bar_best100 p {
+        color: #555555;
+        font-weight: bold;
+        padding: 10px 10px;
+    }
+
+
+    .menu_bar_mdrecommendation {
+        box-sizing: border-box;
+        border: 0.5px solid #cccccc;
+        float: left;
+        width: 50%;
+        background-color: #fff;
+
+    }
+
+    .menu_bar_mdrecommendation p {
+        color: #4444e2;
+        font-weight: bold;
+        padding: 10px 10px;
+    }
+
+
+    /* MDpage 상품영역 */
+    .MDpage_product {
+        width: 100%;
+        box-sizing: border-box;
+        border: 0.5px solid #cccccc;
+        padding: 15px 20px;
+    }
+
+    .MDpage_product_card {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 5px 5px;
+    }
+
+    .MDpage_product_group {
+        float: left;
+        border-bottom: 0.5px solid #cccccc;
+        margin-bottom: 10px;
+    }
+
+    .MDpage_product_card:nth-child(even) {
+        float: right;
+    }
+
+    .MDpage_product_num {
+        display: inline-block;
+    }
+
+    .MDpage_product_num span {
+        font-size: 13px;
+        color: #111111;
+    }
+
+    .MDpage_product_card a {
+        display: inherit;
+    }
+
+    .MDpage_product_card_img {
+        width: 100%;
+        height: 125px;
+    }
+
+    .MDpage_product_card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .MDpage_product_card_menu {
+        padding: 10px 0px;
+    }
+
+    .MDpage_product_card_title {
+        color: black;
+        font-weight: bold;
+        margin-bottom: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* 라인수 */
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+        font-size: 11px;
+    }
+
+    .MDpage_product_card_price {
+        display: block;
+    }
+
+    .MDpage_product_card_price p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .MDpage_product_card_price span {
+        font-size: 11px;
+    }
+}

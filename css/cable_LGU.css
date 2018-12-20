@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+    text-decoration: none;
+}
+
+span,
+p,
+li,
+a {
+    color: #111111;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 768px) {
+    .container {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* 헤더영역 */
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: #4444e2;
+    }
+
+    .home_img {
+        width: 15%;
+        float: left;
+        height: 100%;
+        padding-top: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .home_img img {
+        width: 25px;
+    }
+
+    .logo {
+        float: left;
+        text-align: center;
+        width: 85%;
+        color: #fff;
+        font-size: 19px;
+        height: 100%;
+        box-sizing: border-box;
+        /* padding-top: 12px; */
+        padding: 12px 35px 0 0;
+        /* padding-left: 17px; */
+    }
+
+
+    /* 메인 영역 */
+    .main {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .menu_bar {
+        margin-top: 25px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .menu_bar_SKT {
+        box-sizing: border-box;
+        border: 0.5px solid #cccccc;
+        float: left;
+        width: 33.3%;
+        background-color: #f4f4f4;
+
+    }
+
+    .menu_bar_SKT p {
+        color: #555555;
+        font-weight: bold;
+        padding: 10px 10px;
+    }
+
+
+    .menu_bar_KT {
+        box-sizing: border-box;
+        border: 0.5px solid #cccccc;
+        float: left;
+        width: 33.3%;
+        background-color: #f4f4f4;
+
+    }
+
+    .menu_bar_KT p {
+        color: #555555;
+        font-weight: bold;
+        padding: 10px 10px;
+    }
+
+    .menu_bar_LGU {
+
+        box-sizing: border-box;
+        border: 0.5px solid #cccccc;
+        float: left;
+        width: 33.3%;
+        background-color: #fff;
+    }
+
+    .menu_bar_LGU p {
+        color: #4444e2;
+        font-weight: bold;
+        padding: 10px 10px;
+    }
+
+
+    /* lgu광고 카드영역 */
+    .lgu_Advertising_product {
+        box-sizing: border-box;
+        padding: 10px 15px;
+        border: 0.5px solid #cccccc;
+        width: 100%;
+        height: 100%;
+    }
+
+    .lgu_Advertising_card {
+        float: left;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 0.5px solid #cccccc;
+        height: 100%;
+        /* margin-bottom: 16px; */
+        box-sizing: border-box;
+    }
+
+    .lgu_Advertising_card a {
+        display: inline-block;
+    }
+
+
+    .lgu_Advertising_img {
+        box-sizing: border-box;
+        width: 40%;
+        float: left;
+        height: 150px;
+    }
+
+    .lgu_Advertising_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .lgu_Advertising_menu {
+        padding: 10px 15px;
+        line-height: 1.5;
+        width: 60%;
+        height: 150px;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .lgu_Advertising_title {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .lgu_Advertising_family {
+        font-size: 16px;
+        color: #888888;
+
+    }
+
+    .lgu_Advertising_family span {
+        font-size: 10px;
+        box-sizing: border-box;
+        color: #4444e2;
+        border: 0.5px solid #4444e2;
+        border-radius: 10px 10px 10px 10px;
+        padding: 1px 5px;
+    }
+
+    .lgu_Advertising_contents {
+        box-sizing: border-box;
+        color: #888888;
+        font-size: 10px;
+        padding-top: 30px;
+    }
+
+
+}

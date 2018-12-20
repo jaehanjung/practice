@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+  text-decoration: none;
+}
+
+span,
+p,
+li,
+a {
+  color: #181818;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 480px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* 헤더영역 */
+  .header {
+    width: 100%;
+    height: 50px;
+    background-color: #4444e2;
+  }
+
+  .home_img {
+    width: 15%;
+    float: left;
+    height: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .home_img img {
+    width: 25px;
+  }
+
+  .logo {
+    float: left;
+    text-align: center;
+    width: 60%;
+    color: #fff;
+    font-size: 19px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-left: 17px;
+  }
+
+  .My_Offer_Box {
+    float: right;
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 100%;
+  }
+
+  .My_Offer_Box span {
+    padding: 3px 3px;
+    color: #fff;
+    font-size: 13px;
+    border: 1px solid #fff;
+  }
+
+  /* 배너영역 */
+  .banner {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+
+  .banner img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* 메인 영역 */
+  .main {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+
+  .coupon {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0px 10px 20px 10px;
+  }
+
+  .coupon_box {
+    width: 40%;
+    float: left;
+    margin-top: 23px;
+    margin-left: 23px;
+  }
+
+  .coupon_box_top {
+    background-color: #4444e2;
+    border: 0.5px solid #4444e2;
+    border-radius: 10px 10px 0px 0px;
+    height: 15px;
+  }
+
+  .coupon_box_main {
+    background-color: #fff;
+  }
+
+  .coupon_box_title {
+    color: #111111;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .coupon_box_discount {
+    color: #4444e2;
+    font-size: 13px;
+  }
+
+  .coupon_box_Contents {
+    margin-top: 8px;
+    border-top: 0.5px dashed #cccccc;
+  }
+
+  .coupon_box_Discount_details {
+    text-align: left;
+    font-size: 14px;
+    padding: 10px 10px 0px 10px;
+  }
+
+  .coupon_box_today_use {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    padding: 5px 10px 25px 10px;
+  }
+
+  .coupon_box_bottom {
+    height: 35px;
+    background-color: #4444e2;
+    border: 0.5px solid #4444e2;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 10px;
+  }
+
+  .coupon_box_bottom p {
+    color: #fff;
+  }
+
+  .coupon_box_bottom span {
+    position: relative;
+    top: 3px;
+    left: 5px;
+  }
+
+  .coupon_box_bottom img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-download {
+    color: #fff;
+  }
+
+  .active.coupon_box_bottom {
+    display: none;
+  }
+
+  .coupon_box_bottom_check {
+    display: none;
+  }
+
+  .active.coupon_box_bottom_check {
+    display: block;
+    height: 35px;
+    background-color: #4444e2;
+    border: 0.5px solid #4444e2;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 10px;
+  }
+
+  .c.coupon_box_bottom {
+    display: none;
+  }
+
+  .coupon_box_bottom_check p {
+    color: #fff;
+  }
+
+  .coupon_box_bottom_check span {
+    position: relative;
+    top: 3px;
+    left: 5px;
+  }
+
+  .coupon_box_bottom_check img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-ok-outline {
+    color: #fff;
+  }
+}
