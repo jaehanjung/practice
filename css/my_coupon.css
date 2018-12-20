@@ -18,11 +18,13 @@ button {
 li {
   list-style: none;
 }
+
 ul {
   margin: 0;
   list-style: none;
   padding: 0;
 }
+
 p {
   padding: 0;
   margin: 0;
@@ -33,6 +35,7 @@ p {
 a {
   text-decoration: none;
 }
+
 span,
 p,
 li,
@@ -47,6 +50,7 @@ a {
   clear: both;
   display: block;
 }
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -60,12 +64,14 @@ body {
     margin: 0 auto;
     width: 100%;
   }
+
   /* 헤더영역 */
   .header {
     width: 100%;
     height: 50px;
     background-color: #4444e2;
   }
+
   .home_img {
     width: 15%;
     float: left;
@@ -74,9 +80,11 @@ body {
     box-sizing: border-box;
     text-align: center;
   }
+
   .home_img img {
     width: 25px;
   }
+
   .logo {
     float: left;
     text-align: center;
@@ -89,6 +97,7 @@ body {
     padding: 12px 35px 0 0;
     /* padding-left: 17px; */
   }
+
   .My_Offer_Box {
     float: right;
     width: 25%;
@@ -97,6 +106,7 @@ body {
     padding-top: 15px;
     height: 100%;
   }
+
   .My_Offer_Box span {
     padding: 3px 3px;
     color: #fff;
@@ -111,27 +121,33 @@ body {
     position: relative;
     background-color: #fff;
   }
+
   .My_Coupons {
     box-sizing: border-box;
   }
+
   /* 사용가능 쿠폰 몇장인지 확인 */
   .Available_coupons {
     padding: 10px 25px;
     border-bottom: 0.5px solid #8e8e8e;
   }
+
   .Available_coupons p {
     font-size: 15px;
     font-weight: bold;
     color: #111;
   }
+
   .Available_coupons span {
     margin-left: 5px;
     color: #ff2247;
   }
+
   /* 마이 쿠폰 상품 */
   .My_coupons_card_more {
     padding: 0px 25px 0px 25px;
   }
+
   .My_coupons_product {
     width: 100%;
     float: left;
@@ -141,6 +157,7 @@ body {
     margin-top: 30px;
     box-sizing: border-box;
   }
+
   .My_coupons_product:first-child {
     padding-top: 0;
     border-top: 0;
@@ -151,6 +168,7 @@ body {
     width: 45%;
     float: left;
   }
+
   .My_coupon_box_left {
     float: left;
     background-color: #4444e2;
@@ -159,6 +177,7 @@ body {
     height: 67px;
     width: 15px;
   }
+
   .My_coupon_box_center {
     position: relative;
     float: left;
@@ -166,16 +185,19 @@ body {
     width: 80px;
     border: 1px solid #ccc;
   }
+
   .My_coupon_box_center p {
     padding: 7px 10px 0px 10px;
     font-size: 19px;
     font-weight: bold;
   }
+
   .My_coupon_box_center span {
     font-size: 10px;
     padding: 0px 10px 0px 10px;
     color: #4444ed;
   }
+
   .one {
     left: 94px;
     top: 1px;
@@ -186,6 +208,7 @@ body {
     width: 5px;
     height: 5px;
   }
+
   .two {
     left: 94px;
     top: 8px;
@@ -196,6 +219,7 @@ body {
     width: 5px;
     height: 5px;
   }
+
   .three {
     left: 94px;
     top: 16px;
@@ -206,6 +230,7 @@ body {
     width: 5px;
     height: 5px;
   }
+
   .four {
     left: 94px;
     top: 25px;
@@ -216,6 +241,7 @@ body {
     width: 5px;
     height: 5px;
   }
+
   .five {
     left: 94px;
     top: 35px;
@@ -226,6 +252,7 @@ body {
     width: 5px;
     height: 5px;
   }
+
   .six {
     left: 94px;
     top: 45px;
@@ -236,6 +263,7 @@ body {
     width: 5px;
     height: 5px;
   }
+
   .seven {
     left: 94px;
     top: 54px;
@@ -246,6 +274,7 @@ body {
     width: 5px;
     height: 5px;
   }
+
   .eight {
     left: 94px;
     top: 62px;
@@ -256,6 +285,7 @@ body {
     width: 5px;
     height: 4px;
   }
+
   .My_coupon_box_right {
     float: left;
     background-color: #4444e2;
@@ -264,26 +294,31 @@ body {
     height: 67px;
     width: 20px;
   }
+
   .My_coupon_box_menu {
     line-height: 1.2;
     width: 55%;
     float: left;
   }
+
   .My_coupon_box_title {
     display: inline-block;
     font-size: 11px;
     color: #111111;
   }
+
   .My_coupon_box_Purchase {
     display: inline-block;
     font-size: 10px;
     color: #777777;
   }
+
   .My_coupon_box_term {
     display: block;
     font-size: 10px;
     color: #777777;
   }
+
   /* 푸터 유의사항영역 */
 
   .My_coupons_footer {
@@ -293,21 +328,25 @@ body {
     background-color: #ededed;
     margin-top: 15px;
   }
+
   .Notice {
     background-color: #fff;
     padding: 10px 25px;
   }
+
   .Notice p {
     position: relative;
     font-size: 15px;
     font-weight: bold;
   }
+
   .icon-angle-down {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .icon-angle-up {
+
+  .icon_up {
     display: none;
     position: absolute;
     right: 0;
@@ -318,28 +357,47 @@ body {
     color: #111;
     font-size: 14px;
   }
+
   .Notice_Contents span {
     display: inline-block;
     padding: 0px 25px;
     color: #777777;
     font-size: 12px;
   }
+
   .Notice_Contents {
     display: none;
   }
+
   .active.Notice_Contents {
     display: block;
   }
-  .c.icon-angle-up {
-    display: block;
+
+  .c.icon_up {
+    display: inline-block;
     position: absolute;
     right: 0;
     top: 0;
   }
-  .icon-angle-down {
-    display: block;
+
+  .icon_up img {
+    width: 20px;
+    height: 20px;
   }
-  .c.icon-angle-down {
+
+  .icon_down img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon_down {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .c.icon_down {
     display: none;
   }
 }
