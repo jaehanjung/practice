@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+    text-decoration: none;
+}
+
+span,
+p,
+li,
+a {
+    color: #111111;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 768px) {
+    .container {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* 헤더영역 */
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: #4444e2;
+    }
+
+    .home_img {
+        width: 15%;
+        float: left;
+        height: 100%;
+        padding-top: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .home_img img {
+        width: 25px;
+    }
+
+    .logo {
+        float: left;
+        text-align: center;
+        width: 85%;
+        color: #fff;
+        font-size: 19px;
+        height: 100%;
+        box-sizing: border-box;
+        /* padding-top: 12px; */
+        padding: 12px 35px 0 0;
+        /* padding-left: 17px; */
+    }
+
+    /* 배너영역 */
+    .banner {
+        width: 100%;
+        height: 100%;
+        background-color: #f9f9f9;
+    }
+
+    .banner img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* 메인 영역 */
+    .main {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #fff;
+    }
+
+    /* 사용포인트 및 보유포인트 영역 */
+    .Points_box {
+        width: 100%;
+        height: 110px;
+        background-color: #444444;
+        line-height: 2;
+        box-sizing: border-box;
+        padding: 20px 30px;
+    }
+
+    .Points_used {
+        color: #fff;
+        font-size: 11px;
+    }
+
+    .Points_img {
+        position: relative;
+    }
+
+    .Points_img img {
+        position: absolute;
+        top: 1px;
+        width: 13px;
+        height: 13px;
+        left: 2px;
+    }
+
+    .Possession_title {
+        color: #fff;
+        float: left;
+        font-size: 17px;
+    }
+
+    .Point_number {
+        color: #fff;
+        float: right;
+        font-size: 20px;
+        transform: translateY(-10%);
+    }
+
+    /* 포인트 선물하기 영역 */
+    .attendance_check_box {
+        margin-top: 55px;
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .attendance_check_box_left {
+        width: 48%;
+        float: left;
+    }
+
+    .attendance_check_title_left {
+        font-size: 15px;
+        box-sizing: border-box;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-bottom: 0.5px solid #cccccc;
+    }
+
+    .attendance {
+        text-align: center;
+        color: #4444e2;
+        font-weight: bold;
+        box-sizing: border-box;
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+
+    .attendance span {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .attendance_check_box_right {
+        width: 48%;
+        float: right;
+    }
+
+    .attendance_check_title_right {
+        font-size: 15px;
+        box-sizing: border-box;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-bottom: 0.5px solid #cccccc;
+    }
+
+    fieldset {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* form태그 legend 숨김 */
+    legend {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        margin: -1px;
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    .one_word {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .one_word p {
+        padding: 10px 15px;
+        font-size: 15px;
+        padding: 10px 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .one_word input {
+        float: left;
+        width: 75%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        border: 0.5px solid #4444e2;
+        height: 39px;
+    }
+
+    .Present_submit_box {
+        float: right;
+        width: 20%;
+    }
+
+    .Present_submit_box .Present_submit {
+        width: 100%;
+        background-color: #f8f8f8;
+        color: #4444e2;
+        border-radius: 5px 5px;
+        font-weight: bold;
+        font-weight: 400;
+    }
+
+    ::placeholder {
+        font-size: 10px;
+    }
+
+    /* 테이블 */
+    .check_table {
+        margin-top: 30px;
+    }
+
+    #customers {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+
+    #customers th {
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 0;
+        background-color: #fff;
+        color: #111;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>point</title>
+    <link rel="stylesheet" href="/css/point.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header clearfix">
+            <a href="home.html">
+                <div class="home_img">
+                    <img src="/img/home.png" alt="" />
+                </div>
+            </a>
+            <a href="#">
+                <h1 class="logo">포인트</h1>
+            </a>
+        </header>
+        <div class="banner">
+            <a href="#"> <img src="/img/point_banner.png" alt="" /> </a>
+        </div>
+        <main class="main">
+            <div class="Points_box clearfix">
+                <p class="Points_used">
+                    사용포인트 내역<span class="Points_img"><img src="/img/icon_arrow.png" alt=""></span>
+                </p>
+                <div class="Possession_points clearfix">
+                    <p class="Possession_title">보유포인트</p>
+                    <span class="Point_number">999,999,999,999 P</span>
+                </div>
+            </div>
+            <div class="Present_point_box">
+                <p class="Present_point_title">포인트 선물하기</p>
+                <form action="#" class="points" name="person_info" method="get">
+                    <fieldset>
+                        <legend>개인 정보 입력</legend>
+                        <p class="Present_point_id">닉네임</p>
+                        <input type="text" name="id" required placeholder="선물하실 분의 닉네임을 입력해주세요." />
+                        <p class="Present_point_point">포인트</p>
+                        <input type="number" name="point" required placeholder="선물하실 포인트를 입력해주세요." /><br>
+                        <div class="Present_submit_box">
+                            <input class="Present_submit" type="submit" value="포인트 보내기" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

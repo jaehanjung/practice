@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+/* CSS reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* 링크 스타일 */
+
+a {
+    text-decoration: none;
+}
+
+span,
+p,
+li,
+a {
+    color: #111111;
+}
+
+/* 공통 스타일 */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 768px) {
+    .container {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* 헤더영역 */
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: #4444e2;
+    }
+
+    .home_img {
+        width: 15%;
+        float: left;
+        height: 100%;
+        padding-top: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .home_img img {
+        width: 25px;
+    }
+
+    .logo {
+        float: left;
+        text-align: center;
+        width: 85%;
+        color: #fff;
+        font-size: 19px;
+        height: 100%;
+        box-sizing: border-box;
+        /* padding-top: 12px; */
+        padding: 12px 35px 0 0;
+        /* padding-left: 17px; */
+    }
+
+    /* 배너영역 */
+    .banner {
+        width: 100%;
+        height: 100%;
+        background-color: #f9f9f9;
+    }
+
+    .banner img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* 메인 영역 */
+    .main {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #fff;
+    }
+
+    /* 사용포인트 및 보유포인트 영역 */
+    .Points_box {
+        width: 100%;
+        height: 110px;
+        background-color: #444444;
+        line-height: 2;
+        box-sizing: border-box;
+        padding: 20px 30px;
+    }
+
+    .Points_used {
+        color: #fff;
+        font-size: 11px;
+    }
+
+    .Points_img {
+        position: relative;
+    }
+
+    .Points_img img {
+        position: absolute;
+        top: 1px;
+        width: 13px;
+        height: 13px;
+        left: 2px;
+    }
+
+    .Possession_title {
+        color: #fff;
+        float: left;
+        font-size: 17px;
+    }
+
+    .Point_number {
+        color: #fff;
+        float: right;
+        font-size: 20px;
+        transform: translateY(-10%);
+    }
+
+    /* 포인트 선물하기 영역 */
+    .Present_point_box {
+        margin-top: 55px;
+        padding: 10px 20px;
+    }
+
+    .Present_point_title {
+        padding: 10px 15px;
+        font-weight: bold;
+        border-bottom: 0.5px solid #cccccc;
+    }
+
+
+
+    fieldset {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* form태그 legend 숨김 */
+    legend {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        margin: -1px;
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    .points {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .points p {
+        padding: 10px 15px;
+        font-size: 15px;
+        padding: 10px 15px;
+        font-weight: bold;
+    }
+
+    .points input {
+        width: 100%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        border: 0.5px solid #4444e2;
+    }
+
+    .Present_submit_box {
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Present_submit_box .Present_submit {
+        width: 50%;
+        background-color: #f8f8f8;
+        color: #4444e2;
+        border-radius: 10px 10px;
+        font-weight: bold;
+    }
+
+    ::placeholder {
+        font-size: 10px;
+    }
+}
