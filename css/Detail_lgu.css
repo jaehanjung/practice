@@ -87,7 +87,7 @@ body {
 }
 
 /* 모바일 버전 */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 100%;
     position: relative;
