@@ -88,13 +88,13 @@ body {
     .logo {
         float: left;
         text-align: center;
-        width: 85%;
+        width: 70%;
         color: #fff;
         font-size: 19px;
         height: 100%;
         box-sizing: border-box;
         /* padding-top: 12px; */
-        padding: 12px 35px 0 0;
+        line-height: 50px;
         /* padding-left: 17px; */
     }
 
