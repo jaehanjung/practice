@@ -287,6 +287,8 @@ body {
     float: left;
     width: 45%;
     height: 128px;
+    box-sizing: border-box;
+    border-right: 0.5px solid #ededed;
   }
   .cch_img img {
     width: 100%;
@@ -301,7 +303,6 @@ body {
     border-bottom: 1px solid #ededed;
   }
   .cch_price {
-   
     padding: 10px 10px;
     float: right;
   }
