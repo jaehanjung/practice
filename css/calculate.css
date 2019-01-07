@@ -195,6 +195,9 @@ body {
   .calender_menu span {
     font-weight: bold;
   }
+  .calender_menu input{
+    height: 17px;
+  }
   .sub_menu a {
     text-align: center;
     color: white;
@@ -218,7 +221,7 @@ body {
   }
   .calulate_title {
     float: left;
-    width: 40%;
+    width: 45%;
     font-size: 14px;
     box-sizing: border-box;
     padding: 10px 10px;
@@ -229,7 +232,7 @@ body {
   .caluate_price {
     float: right;
     text-align: right;
-    width: 60%;
+    width: 55%;
     font-size: 14px;
     box-sizing: border-box;
     padding: 10px 10px;
