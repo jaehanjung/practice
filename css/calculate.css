@@ -285,7 +285,7 @@ body {
   }
   .cch_img {
     float: left;
-    width: 40%;
+    width: 45%;
     height: 128px;
   }
   .cch_img img {
@@ -293,7 +293,7 @@ body {
     height: 100%;
   }
   .cch_title {
-    width: 60%;
+    width: 55%;
     float: right;
     line-height: 1.7;
     box-sizing: border-box;
